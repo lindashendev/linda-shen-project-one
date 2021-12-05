@@ -294,6 +294,116 @@ p ~ a {
   background: #bfd4f9;
 }
 
+.blog-backdrop {
+  color: #FFF;
+  background-color: #ccedfb;
+}
+.blog-backdrop .main-blog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+p, ul {
+  margin: 10px;
+}
+
+.new-collection {
+  background-color: #315669;
+  top: -100px;
+  width: 60%;
+  position: relative;
+}
+.new-collection img {
+  position: relative;
+  top: -30px;
+  width: 98%;
+  -webkit-box-shadow: 15px 15px #0cadc0;
+          box-shadow: 15px 15px #0cadc0;
+}
+.new-collection h2 + p {
+  color: #ccedfb;
+  margin-bottom: 40px;
+}
+.new-collection .article-card {
+  background-color: #315669;
+  top: -21px;
+  position: relative;
+  width: 98%;
+  padding: 20px;
+  position: relative;
+}
+.new-collection .article-card:after {
+  content: "";
+  position: absolute;
+  top: -2%;
+  left: -2%;
+  height: 104%;
+  width: 102%;
+  -webkit-box-shadow: 15px 15px #0cadc0;
+          box-shadow: 15px 15px #0cadc0;
+}
+
+.our-mission {
+  background-color: #315669;
+  width: 30%;
+  height: 100%;
+  padding-bottom: 40px;
+}
+.our-mission img {
+  top: -20px;
+  left: 20px;
+  position: relative;
+}
+.our-mission h4 ~ p {
+  margin-bottom: 30px;
+}
+.our-mission li {
+  list-style-position: inside;
+}
+
+.blog-comments {
+  color: #1A315C;
+  top: -100px;
+  position: relative;
+}
+.blog-comments h4 {
+  margin-bottom: 40px;
+}
+.blog-comments p {
+  color: #161515;
+}
+
+.blog-user-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-image {
+  width: 10%;
+}
+.profile-image img {
+  width: 100%;
+}
+
+.blog-comment {
+  width: 70%;
+  margin-bottom: 50px;
+}
+.blog-comment p:first-child {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.blog-comment p {
+  margin: 0;
+  margin-left: 20px;
+}
+
 html {
   font-size: 125%;
 }
@@ -568,6 +678,24 @@ section {
   margin-bottom: 50px;
 }
 
-footer p {
-  font-size: 0.9rem;
+.blog {
+  background-image: url(../assets/blog-header.jpg);
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 50vh;
+}
+.blog h1 {
+  width: 55%;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.main-blog-content {
+  padding: 0;
+}
+
+.blog-comments {
+  font-size: 1rem;
+  letter-spacing: 1.2px;
 }

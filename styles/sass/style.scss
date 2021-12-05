@@ -3,6 +3,7 @@
 @import "partials/wrapper";
 @import "partials/nav";
 @import "partials/buttons";
+@import "partials/blog";
 
 // mixin fontsize
 @mixin fontSize($sizeValue) {
@@ -280,7 +281,6 @@ section {
   height: 400px;
 }
 
-
 // search function
 .search-by-style {
   background-color: $light-primary;
@@ -293,8 +293,25 @@ section {
   }
 }
 
-footer {
-  p {
-    @include fontSize(18);
-  }
+// blog typography mixins
+.blog {
+  background-image: url(../assets/blog-header.jpg);
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 50vh;
+    h1 {
+      width: 55%;
+      @include fontSize(50);   
+      @include lineHeight(30);
+    }
+}
+// section padding reset
+.main-blog-content {
+  padding: 0;
+}
+// blog font size
+.blog-comments {
+  @include fontSize(20);
+  @include letterSpacing(1.2);
 }
