@@ -8,12 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header>
+  <header class="home">
     <!-- start of the nav -->
-    <nav>
+    <nav class="wrapper">
       <p class="logo"><a href="#">Textilee</a></p>
       <ul>
         <li><a href="#">Home</a></li>
@@ -23,54 +24,64 @@
       </ul>
     </nav>
     <!-- start of h1 and image -->
-    <h1>Textiles for all projects in mind</h1>
-    <img src="./assets/home-box-header.png" alt="">
+    <div class="wrapper">
+      <h1>Textiles for all projects in mind</h1>
+    </div>
+    <img class="home-box" src="./assets/home-box-header.png" alt="">
   </header>
   <!-- start of main -->
   <main>
     <!-- start of the learn section -->
-    <section>
-      <div class="learn-with-us-info">
-        <h2>Learn new techniques</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias ea voluptatibus labore non unde saepe ab quasi dignissimos earum aliquid ad mollitia est cupiditate, suscipit eum repellat impedit? Enim.</p>
-        <a href="#">find out more</a>
+    <section class="learn-techniques">
+      <div class="learn-section wrapper">
+        <div class="techniques-info">
+          <h2>Learn new techniques</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias ea voluptatibus labore non unde saepe ab quasi dignissimos earum aliquid ad mollitia est cupiditate, suscipit eum repellat impedit? Enim.</p>
+          <a href="#">find out more</a>
+        </div>
+        <div class="techniques-image">
+          <img src="./assets/small-box.jpg" alt="">
+        </div>
       </div>
-      <img src="./assets/small-box.jpg" alt="">
     </section>
     <!-- start of gallery -->
     <section class="gallery">
-      <li><img src="./assets/gallery-image-1.jpg" alt=""></li>
-      <li><img src="./assets/gallery-image-2.jpg" alt=""></li>
-      <li><img src="./assets/gallery-image-3.jpg" alt=""></li>
+      <ul class="wrapper">
+        <li><img src="./assets/gallery-image-1.jpg" alt=""></li>
+        <li><img src="./assets/gallery-image-2.jpg" alt=""></li>
+        <li><img src="./assets/gallery-image-3.jpg" alt=""></li>
+      </ul>
     </section>
     <!-- start of events and info section -->
-    <section>
-      <div class="upcoming-events">
-        <span class="fas fa-calendar-check"></span>
-        <h3>Upcoming Events</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia veritatis totam hic officiis numquam sed minus quibusdam molestias quis ullam.</p>
-      </div>
-      <div class="community">
-        <span class="fas fa-users"></span>
-        <h3>Community</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis nesciunt dolore aut, voluptas quia incidunt iusto doloremque. Tenetur, exercitationem.</p>
-      </div>
-      <div class="blog">
-        <span class="fas fa-file"></span>
-        <h3>Blog</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatum quae soluta exercitationem obcaecati quod architecto blanditiis ullam? Officiis, eveniet.</p>
-      </div>
-      <div class="get-in-touch">
-        <span class="fas fa-phone"></span>
-        <h3>Get in Touch</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet autem incidunt nesciunt molestiae accusantium dolore cupiditate iste at ea blanditiis!</p>
+    <section class="upcoming-events-info">
+      <div class="wrapper">
+        <div class="upcoming-events">
+          <span class="fas fa-calendar-check"></span>
+          <h3>Upcoming Events</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia veritatis totam hic officiis numquam sed minus quibusdam molestias quis ullam.</p>
+        </div>
+        <div class="community">
+          <span class="fas fa-users"></span>
+          <h3>Community</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis nesciunt dolore aut, voluptas quia incidunt iusto doloremque. Tenetur, exercitationem.</p>
+        </div>
+        <div class="blog">
+          <span class="fas fa-file"></span>
+          <h3>Blog</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatum quae soluta exercitationem obcaecati quod architecto blanditiis ullam? Officiis, eveniet.</p>
+        </div>
+        <div class="get-in-touch">
+          <span class="fas fa-phone"></span>
+          <h3>Get in Touch</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet autem incidunt nesciunt molestiae accusantium dolore cupiditate iste at ea blanditiis!</p>
+        </div>
       </div>
     </section>
     <!-- start of community section -->
     <section class="company-descriptions">
       <div class="discover-markets">
         <img src="./assets/left-image.jpg" alt="">
-        <div class="discover-markets-info">
+        <div class="discover-markets-info wrapper">
           <h4>Discover our online market</h4>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ipsam rem deleniti ducimus assumenda, dolores nobis alias tenetur sunt obcaecati!</p>
           <a href="#">read more</a>
@@ -78,7 +89,7 @@
       </div>
       <div class="new-locations">
         <img src="./assets/right-image.jpg" alt="">
-        <div class="locations-info">
+        <div class="locations-info wrapper">
           <h4>New Locations</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cum quam dolorum eius labore. Facilis cumque ipsum labore dolorem harum.</p>
           <a href="#">read more</a>
@@ -91,9 +102,11 @@
     </section>
     <!-- start of search section -->
     <section class="search-by-style">
-      <h4>Search by style</h4>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius fugit quidem laboriosam exercitationem nesciunt veniam quod architecto quis vitae atque. Repellendus illum explicabo perferendis tempora minus at quam nulla fugit.</p>
-      <a href="#">find out more</a>
+      <div class="wrapper">
+        <h4>Search by style</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius fugit quidem laboriosam exercitationem nesciunt veniam quod architecto quis vitae atque. Repellendus illum explicabo perferendis tempora minus at quam nulla fugit.</p>
+        <a href="#">find out more</a>
+      </div>
     </section>
   </main>  
   <!-- start of footer -->

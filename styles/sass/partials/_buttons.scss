@@ -1,0 +1,24 @@
+// Home button
+p ~ a {
+  font-family: $primaryFont;
+  color: $primary;
+  text-decoration: none;
+  padding: 2px 35px;
+}
+
+// Home
+
+// Dark theme button
+.learn-techniques, .search-by-style {
+  a {
+    background-color: $primary;
+    color: $light-white;
+  }
+}
+
+// Light theme button
+.company-descriptions {
+  a {
+    background: $light-secondary;
+  }
+}

@@ -2,20 +2,44 @@
 @import "partials/variables";
 @import "partials/wrapper";
 @import "partials/nav";
+@import "partials/buttons";
 
+// mixin fontsize
 @mixin fontSize($sizeValue) {
-  font-size: $sizeValue * 1px;
-  font-size: ($sizeValue) * 1rem;
+  font-size: ($sizeValue/20) * 1rem;
 }
+
+@mixin lineHeight($heightValue) {
+  line-height: ($heightValue/20) * 1;
+}
+
+@mixin letterSpacing($spaceValue) {
+  letter-spacing: $spaceValue * 1px;
+}
+
+@mixin position($type, $top, $left) {
+  position: $type;
+  top: $top;
+  left: $left;
+}
+// mixin flex 
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
 // typography styling
 
 html {
-  @include fontSize(125%);
+  font-size: 125%;
 }
 
 body {
-  @include fontSize(20);
   font-family: $baseFont;
+  color: $primary;
+  @include fontSize(20);
+  @include lineHeight(28);
+  @include letterSpacing(2);
 }
 
 h1, 
@@ -23,70 +47,127 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: $primaryFont
+h6,
+.logo {
+  font-family: $primaryFont;
+  font-weight: 400;
 }
 
 h1 {
   @include fontSize(68);
+  @include lineHeight(64);
 }
 
 h2 {
-  @include fontSize(58);
+  @include fontSize(55);
+  @include lineHeight(30);
 }
 
 h3 {
   @include fontSize(43);
+  @include lineHeight(38);
+  @include letterSpacing(2.7);
 }
 
 h4 {
   @include fontSize(40);
+  @include letterSpacing(4.3);
 }
 
 h5 {
   @include fontSize(40);
+  @include lineHeight(35);
+  @include letterSpacing(2.5);
 }
 
 h6 {
   @include fontSize(35);
+  @include letterSpacing(2.9);
 }
 
 .logo {
   @include fontSize(30);
+  @include lineHeight(24);
+  @include letterSpacing(1.7);
 }
 
 button {
   @include fontSize(27);
+  @include lineHeight(32);
+  @include letterSpacing(1.4);
 }
 
 nav {
   @include fontSize(20);
+  @include lineHeight(29);
+  @include letterSpacing(1.4);
 }
 
-// font family
-// font-family: 'Lato', sans-serif;
-// font-family: 'Pacifico', cursive;
-// Dark slate blue 
-// #1A315C
-// Black
-// #1E1713
-// Turquoise Blue
-// #0CADC0
-// Light sky blue
-// #CCEDFB
-// Black Two
-// #161515
-// White
-// #FFFFFF
-// h1 - pacifico regular 68/64
-// h2 - pacifico regular 58/68
-// h3 - pacifico regular 43/58/2.7
-// h4 - pacifico regular 40/4.3
-// h5 - pacifico regular 40/58/2.5
-// h6 - pacifico regular 35/2.9
-// logo - pacifico regular 30/24/1.7
-// button - pacifico regular 27/32/1.4
-// nav - lato bold 20/29/1.4
-// body - lato regular 20/28/2
+ul {
+  margin: 0;
+  padding: 0;
+}
+// general styling
+section {
+  padding: 75px 0;
+}
 
+// Home section styling 
+// home background styling
+.home {
+  background-image: url(../assets/header-home.jpg);
+  background-position: center;
+  height: 90vh;
+    h1 {
+      width: 55%;
+      @include fontSize(50);   
+      @include lineHeight(30);
+    }
+}
+
+.home-box {
+  width: 60%;
+}
+
+.learn-techniques {
+  background-color: $light-primary;
+  .learn-section {
+    margin-top: 200px;
+    img {
+      margin-top: 50px;
+      box-shadow: -15px 15px $secondary;
+    }
+  }
+}
+
+.learn-section {
+  display: flex;
+  justify-content: space-between;
+  .learn-info {
+      img {
+        align-items: center;
+        width: 500px;
+    }
+  }
+}
+
+.gallery {
+  background-color: $tertiary;
+  ul {
+  display: flex;
+  justify-content: space-between;
+  // width: 100%;
+  li {
+    display: inline-block;
+    width: calc((100%/3) - 30px);
+  }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.upcoming-events-info {
+  background-color: $light-primary;
+}
 
