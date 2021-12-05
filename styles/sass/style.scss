@@ -1,0 +1,92 @@
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/wrapper";
+@import "partials/nav";
+
+@mixin fontSize($sizeValue) {
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue) * 1rem;
+}
+// typography styling
+
+html {
+  @include fontSize(125%);
+}
+
+body {
+  @include fontSize(20);
+  font-family: $baseFont;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primaryFont
+}
+
+h1 {
+  @include fontSize(68);
+}
+
+h2 {
+  @include fontSize(58);
+}
+
+h3 {
+  @include fontSize(43);
+}
+
+h4 {
+  @include fontSize(40);
+}
+
+h5 {
+  @include fontSize(40);
+}
+
+h6 {
+  @include fontSize(35);
+}
+
+.logo {
+  @include fontSize(30);
+}
+
+button {
+  @include fontSize(27);
+}
+
+nav {
+  @include fontSize(20);
+}
+
+// font family
+// font-family: 'Lato', sans-serif;
+// font-family: 'Pacifico', cursive;
+// Dark slate blue 
+// #1A315C
+// Black
+// #1E1713
+// Turquoise Blue
+// #0CADC0
+// Light sky blue
+// #CCEDFB
+// Black Two
+// #161515
+// White
+// #FFFFFF
+// h1 - pacifico regular 68/64
+// h2 - pacifico regular 58/68
+// h3 - pacifico regular 43/58/2.7
+// h4 - pacifico regular 40/4.3
+// h5 - pacifico regular 40/58/2.5
+// h6 - pacifico regular 35/2.9
+// logo - pacifico regular 30/24/1.7
+// button - pacifico regular 27/32/1.4
+// nav - lato bold 20/29/1.4
+// body - lato regular 20/28/2
+
+
