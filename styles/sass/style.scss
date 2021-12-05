@@ -47,10 +47,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.logo {
+h6 
+{
   font-family: $primaryFont;
   font-weight: 400;
+  margin: 0;
 }
 
 h1 {
@@ -70,23 +71,23 @@ h3 {
 }
 
 h4 {
-  @include fontSize(40);
-  @include letterSpacing(4.3);
+  @include fontSize(35);
+  @include letterSpacing(2.5);
 }
 
 h5 {
-  @include fontSize(40);
+  @include fontSize(35);
   @include lineHeight(35);
   @include letterSpacing(2.5);
 }
 
 h6 {
-  @include fontSize(35);
-  @include letterSpacing(2.9);
+  @include fontSize(25);
+  @include letterSpacing(2.5);
 }
 
 .logo {
-  @include fontSize(30);
+  @include fontSize(38);
   @include lineHeight(24);
   @include letterSpacing(1.7);
 }
@@ -167,7 +168,133 @@ section {
   }
 }
 
-.upcoming-events-info {
+.navigation-info {
   background-color: $light-primary;
+  .layout-row-one, .layout-row-two {
+    display: flex;
+  }
 }
 
+.circle-icon {
+  width: 58px;
+  height: 58px;
+  background-color: $secondary;
+  border-radius: 50%;
+  position: relative;
+    span {
+      top: 16px;
+      left: 14px;
+      position: absolute;
+      color: $light-white;
+      @include fontSize(26);
+    }
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+.fa-file {
+  margin-left: 7px;
+}
+
+.info-main {
+  display: flex;
+  h4 {
+    margin: 0;
+    padding-left: 20px;
+  }
+}
+
+.info-segment {
+  width: calc(100%/2);
+  p {
+    margin-left: 80px;
+  }
+}
+
+// online markets
+.main-info-section {
+  background-color: $tertiary;
+  h4, p {
+    color: $light-white;
+  }
+  a {
+    background-color: $light-secondary;
+  }
+}
+
+// box shadow effect
+.image-section {
+  display: flex;
+  padding: 30px 0;
+  img {
+    box-shadow: 20px 20px $secondary;
+  }
+}
+
+.discover-markets {
+  position: relative;
+  width: 100%;
+  img {
+    top: -120px;
+    position: absolute;
+    width: 45%;
+  }
+  h4, p, a {
+    position: relative;
+    top: -40px;
+    width: 38%;
+    left: 58%;
+  }
+}
+.discover-markets-info {
+  margin-right: 70px;
+}
+.new-locations {
+  display: flex;
+  position: relative;
+  width: 100%;
+  .locations-info {
+    text-align: right;  
+    position: relative;
+    margin-left: 100px;
+    width: 38%;
+    }
+  img {
+    position: absolute;
+    right: 0;
+    width: 45%;
+    box-shadow: -20px 20px $secondary;
+  }
+  h4, p, a {
+    text-align: right;
+    position: relative;
+    // width: 55%;
+  }
+}
+
+// thread background image
+.thread-background {
+  background-image: url(../assets/banner.jpg);
+  height: 400px;
+}
+
+
+// search function
+.search-by-style {
+  background-color: $light-primary;
+  .search-styles {
+    text-align: center;
+    margin: 0 auto;
+    p {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+footer {
+  p {
+    @include fontSize(18);
+  }
+}
