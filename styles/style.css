@@ -233,12 +233,17 @@ html {
 }
 
 nav {
+  height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+nav p {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 nav ul {
   display: -webkit-box;
@@ -252,9 +257,23 @@ nav ul li {
   padding: 20px;
   list-style: none;
   display: inline-block;
+  position: relative;
 }
 nav ul li a {
   text-transform: uppercase;
+}
+nav ul li a::after {
+  content: "";
+  left: 0;
+  bottom: 10px;
+  position: absolute;
+  width: 100%;
+  border-bottom: 2px solid #0cadc0;
+  opacity: 0;
+}
+nav ul li a:hover::after, nav ul li a:focus::hover {
+  border-bottom: 2px solid #0cadc0;
+  opacity: 1;
 }
 
 .logo {
@@ -575,8 +594,8 @@ section {
 
 .home {
   background-image: url(../assets/header-home.jpg);
+  background-repeat: no-repeat;
   background-position: center;
-  height: 90vh;
 }
 .home h1 {
   width: 55%;

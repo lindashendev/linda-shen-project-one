@@ -3,8 +3,12 @@
 }
 
 nav {
+  height: 12vh;
   display: flex;
   justify-content: space-between;
+  p {
+  align-self: center;
+  }
   ul {
     display: flex;
     align-items: center;
@@ -12,8 +16,23 @@ nav {
       padding: 20px;
       list-style: none;
       display: inline-block;
+      position: relative;
         a {
           text-transform: uppercase;
+        }
+        a::after {
+          content: "";
+          left: 0;
+          bottom: 10px;
+          position: absolute;
+          width: 100%;
+          border-bottom: 2px solid $secondary;
+          opacity: 0;
+
+        }
+        a:hover::after, a:focus::hover {
+          border-bottom: 2px solid $secondary;
+          opacity: 1;
         }
     }
   }
