@@ -5,24 +5,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
-  height: 50vh;
+  height: 65vh;
 }
 // section padding reset
 .main-blog-content {
   padding: 0;
 }
 
-// background color
-.blog-backdrop {
+// blog background color
+.blog-background{
   color: $light-white;
   background-color: $light-primary;
     .main-blog-content {
     display: flex;
     justify-content: space-between;
     height: 100%;
-      p, ul {
-      margin: 10px;
-      }
   }
 }
 
@@ -36,11 +33,18 @@
     position: relative;
     top: -30px;
     width:98%;
-    box-shadow: 15px 15px $secondary;
+    box-shadow: 18px 18px $secondary;
+  }
+  h2 {
+    margin-top: 30px;
   }
   h2 + p {
     color: $light-primary;
+    margin-top: 20px;
     margin-bottom: 40px;
+  }
+  p:last-child {
+    margin-bottom: 70px;
   }
   .article-card {
     background-color: $tertiary;
@@ -53,30 +57,36 @@
   .article-card:after {
     content: "";
     position: absolute;
-    top: -2%;
-    left: -2%;
-    height: 104%;
-    width: 102%;
-    box-shadow: 15px 15px $secondary;
+    top: -5%;
+    left: -5%;
+    height: 107%;
+    width: 105%;
+    box-shadow: 18px 18px $secondary;
   }
 }
 
 // aside article
 .our-mission {
   background-color: $tertiary;
-  width: 30%;
+  top: 100px;
+  width: 25%;
   height: 100%;
   padding-bottom: 40px;
+  position: relative;
   img {
+    width: 94%;
+    left: 22px;
     top: -20px;
-    left: 20px;
     position: relative;
   }
   h4 ~ p {
     margin-bottom: 30px;
   }
-  li {
+  ul {
+    padding: 0;
+    li {
     list-style-position: inside;
+  }
   }
 }
 
@@ -117,5 +127,12 @@
   p {
     margin: 0;
     margin-left: 20px;
+  }
+}
+
+.create-comment {
+    button {
+    color: $light-white;
+    background-color: $primary;
   }
 }

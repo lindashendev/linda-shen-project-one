@@ -7,6 +7,7 @@
 @import "partials/forms";
 @import "partials/contact";
 @import "partials/typography";
+@import "partials/responsive";
 
 // typography styling
 html {
@@ -28,7 +29,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 90vh;
+  height: 80vh;
 }
 
 // image position
@@ -138,6 +139,7 @@ section {
 // Teal bg - Discover info
 .info-section {
   background-color: $tertiary;
+  height: 85vh;
   h4, p {
     color: $light-white;
   }
@@ -146,25 +148,28 @@ section {
 // image styling
 .layout-section {
   display: flex;
-  img {
-    box-shadow: 20px 20px $secondary;
-  }
-  .image-left {
-  top: -120px;
   position: relative;
-  width: 40%;
+  img {
+    top: -110px;
+    box-shadow: 20px 20px $secondary;
+    width: 50%;
+    position: absolute;
   }
   .markets-block {
-    left: 100px;
+    left: 25%;
     position: relative;
-    width: 40%;
+    width: 35%;
     height: 100%;
+    margin-bottom: 250px;
   }
 }
 
 // positioning on second section
 .right-info {
+  position: relative;
+  top: -50px;
   .locations-block {
+    top: -100px;
     text-align: right;  
     position: relative;
     margin-left: 100px;
@@ -193,21 +198,5 @@ section {
   .search-styles {
     text-align: center;
     margin: 0 auto;
-  }
-}
-
-// Get in touch 
-.contact-form {
-  background-image: url(../assets/contact-header.jpg);
-  height: 70vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-
-.contact-sections {
-  textarea::placeholder {
-    color: $light-white;
-    opacity: 100%;
   }
 }

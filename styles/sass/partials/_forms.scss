@@ -1,4 +1,4 @@
-// blog submit styling
+// general form styling
 fieldset {
   display: flex;
   border: 0;
@@ -28,16 +28,34 @@ textarea {
   width: 100%;
 }
 
-// post - button styling
-button {
-  font-family: $primaryFont;
-  background-color: $primary;
+// contact form
+.contact-sections {
+  input::placeholder {
   color: $light-white;
-  border: 0;
-  width: 100%;
-  padding: 8px 0;
-  letter-spacing: 3px;
+  opacity: 100%;
+  }
+  textarea::placeholder {
+    color: $light-white;
+    opacity: 100%;
+  }
 }
 
+.contact-form-info {
+  background-color: $light-primary;
+  form {
+    position: relative;
+    top: -140px;
+    background-color: $tertiary;
+    width: 70%;
+    box-shadow: 20px 20px $secondary;
+    fieldset {
+      width: 100%;
+      padding: 60px;
+    }
+  }
+}
 
-
+.contact-sections {
+  display: flex;
+  justify-content: space-between;
+}

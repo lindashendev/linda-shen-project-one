@@ -13,8 +13,8 @@
 body {
   font-family: $baseFont;
   color: $primary;
-  @include fontSize(20);
-  @include lineHeight(28);
+  @include fontSize(18);
+  @include lineHeight(30);
   @include letterSpacing(2);
 }
 
@@ -101,9 +101,10 @@ button {
   @include fontSize(20);
 }
 
-.blog {
+.blog, .contact {
       h1 {
       width: 55%;
+      padding: 80px 0;
       @include fontSize(50);   
       @include lineHeight(30);
     }

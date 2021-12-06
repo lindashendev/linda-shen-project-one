@@ -1,9 +1,8 @@
-// Home button
 // Dark button
 .btn {
   font-family: $primaryFont;
   color: $primary;
-  margin-top: 20px;
+  margin-top: 10px;
   display: inline-block;
   a {
     text-decoration: none;
@@ -24,4 +23,24 @@
     background-color: $light-secondary;
     color: $primary;
   }
+}
+
+
+// post - button styling
+button {
+  font-family: $primaryFont;
+  background-color: $primary;
+  color: $light-white;
+  border: 0;
+  width: 100%;
+  padding: 8px 0;
+  letter-spacing: 3px;
+}
+
+
+.contact-form-info {
+  button {
+  color: $tertiary;
+  background-color: $light-secondary;
+}
 }

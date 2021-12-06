@@ -297,7 +297,7 @@ footer p {
 .btn {
   font-family: "Pacifico", cursive;
   color: #1A315C;
-  margin-top: 20px;
+  margin-top: 10px;
   display: inline-block;
 }
 .btn a {
@@ -315,23 +315,38 @@ footer p {
   color: #1A315C;
 }
 
+button {
+  font-family: "Pacifico", cursive;
+  background-color: #1A315C;
+  color: #FFF;
+  border: 0;
+  width: 100%;
+  padding: 8px 0;
+  letter-spacing: 3px;
+}
+
+.contact-form-info button {
+  color: #315669;
+  background-color: #bfd4f9;
+}
+
 .blog {
   background-image: url(../assets/blog-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
-  height: 50vh;
+  height: 65vh;
 }
 
 .main-blog-content {
   padding: 0;
 }
 
-.blog-backdrop {
+.blog-background {
   color: #FFF;
   background-color: #ccedfb;
 }
-.blog-backdrop .main-blog-content {
+.blog-background .main-blog-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,9 +354,6 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-}
-.blog-backdrop .main-blog-content p, .blog-backdrop .main-blog-content ul {
-  margin: 10px;
 }
 
 .new-collection {
@@ -354,12 +366,19 @@ footer p {
   position: relative;
   top: -30px;
   width: 98%;
-  -webkit-box-shadow: 15px 15px #0cadc0;
-          box-shadow: 15px 15px #0cadc0;
+  -webkit-box-shadow: 18px 18px #0cadc0;
+          box-shadow: 18px 18px #0cadc0;
+}
+.new-collection h2 {
+  margin-top: 30px;
 }
 .new-collection h2 + p {
   color: #ccedfb;
+  margin-top: 20px;
   margin-bottom: 40px;
+}
+.new-collection p:last-child {
+  margin-bottom: 70px;
 }
 .new-collection .article-card {
   background-color: #315669;
@@ -372,29 +391,35 @@ footer p {
 .new-collection .article-card:after {
   content: "";
   position: absolute;
-  top: -2%;
-  left: -2%;
-  height: 104%;
-  width: 102%;
-  -webkit-box-shadow: 15px 15px #0cadc0;
-          box-shadow: 15px 15px #0cadc0;
+  top: -5%;
+  left: -5%;
+  height: 107%;
+  width: 105%;
+  -webkit-box-shadow: 18px 18px #0cadc0;
+          box-shadow: 18px 18px #0cadc0;
 }
 
 .our-mission {
   background-color: #315669;
-  width: 30%;
+  top: 100px;
+  width: 25%;
   height: 100%;
   padding-bottom: 40px;
+  position: relative;
 }
 .our-mission img {
+  width: 94%;
+  left: 22px;
   top: -20px;
-  left: 20px;
   position: relative;
 }
 .our-mission h4 ~ p {
   margin-bottom: 30px;
 }
-.our-mission li {
+.our-mission ul {
+  padding: 0;
+}
+.our-mission ul li {
   list-style-position: inside;
 }
 
@@ -436,6 +461,11 @@ footer p {
   margin-left: 20px;
 }
 
+.create-comment button {
+  color: #FFF;
+  background-color: #1A315C;
+}
+
 fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,14 +500,49 @@ textarea {
   width: 100%;
 }
 
-button {
-  font-family: "Pacifico", cursive;
-  background-color: #1A315C;
+.contact-sections input::-webkit-input-placeholder {
   color: #FFF;
-  border: 0;
-  width: 100%;
-  padding: 8px 0;
-  letter-spacing: 3px;
+  opacity: 100%;
+}
+
+.contact-sections input::-moz-placeholder {
+  color: #FFF;
+  opacity: 100%;
+}
+
+.contact-sections input:-ms-input-placeholder {
+  color: #FFF;
+  opacity: 100%;
+}
+
+.contact-sections input::-ms-input-placeholder {
+  color: #FFF;
+  opacity: 100%;
+}
+
+.contact-sections input::placeholder {
+  color: #FFF;
+  opacity: 100%;
+}
+.contact-sections textarea::-webkit-input-placeholder {
+  color: #FFF;
+  opacity: 100%;
+}
+.contact-sections textarea::-moz-placeholder {
+  color: #FFF;
+  opacity: 100%;
+}
+.contact-sections textarea:-ms-input-placeholder {
+  color: #FFF;
+  opacity: 100%;
+}
+.contact-sections textarea::-ms-input-placeholder {
+  color: #FFF;
+  opacity: 100%;
+}
+.contact-sections textarea::placeholder {
+  color: #FFF;
+  opacity: 100%;
 }
 
 .contact-form-info {
@@ -505,9 +570,27 @@ button {
           justify-content: space-between;
 }
 
-button {
-  color: #315669;
-  background-color: #bfd4f9;
+.contact {
+  background-image: url(../assets/contact-header.jpg);
+  height: 55vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.contact-icons {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55%;
+}
+.contact-icons span {
+  font-size: 1.1rem;
 }
 
 .contact-info-icons {
@@ -526,8 +609,8 @@ button {
 body {
   font-family: "Lato", Arial, sans-serif;
   color: #1A315C;
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 0.9rem;
+  line-height: 1.5;
   letter-spacing: 2px;
 }
 
@@ -608,8 +691,9 @@ button {
   font-size: 1rem;
 }
 
-.blog h1 {
+.blog h1, .contact h1 {
   width: 55%;
+  padding: 80px 0;
   font-size: 2.5rem;
   line-height: 1.5;
 }
@@ -642,7 +726,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 90vh;
+  height: 80vh;
 }
 
 .home-box {
@@ -761,6 +845,7 @@ section {
 
 .info-section {
   background-color: #315669;
+  height: 85vh;
 }
 .info-section h4, .info-section p {
   color: #FFF;
@@ -770,24 +855,29 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 .layout-section img {
+  top: -110px;
   -webkit-box-shadow: 20px 20px #0cadc0;
           box-shadow: 20px 20px #0cadc0;
-}
-.layout-section .image-left {
-  top: -120px;
-  position: relative;
-  width: 40%;
+  width: 50%;
+  position: absolute;
 }
 .layout-section .markets-block {
-  left: 100px;
+  left: 25%;
   position: relative;
-  width: 40%;
+  width: 35%;
   height: 100%;
+  margin-bottom: 250px;
 }
 
+.right-info {
+  position: relative;
+  top: -50px;
+}
 .right-info .locations-block {
+  top: -100px;
   text-align: right;
   position: relative;
   margin-left: 100px;
@@ -815,37 +905,4 @@ section {
 .search-by-style .search-styles {
   text-align: center;
   margin: 0 auto;
-}
-
-.contact-form {
-  background-image: url(../assets/contact-header.jpg);
-  height: 70vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-
-.contact-sections textarea::-webkit-input-placeholder {
-  color: #FFF;
-  opacity: 100%;
-}
-
-.contact-sections textarea::-moz-placeholder {
-  color: #FFF;
-  opacity: 100%;
-}
-
-.contact-sections textarea:-ms-input-placeholder {
-  color: #FFF;
-  opacity: 100%;
-}
-
-.contact-sections textarea::-ms-input-placeholder {
-  color: #FFF;
-  opacity: 100%;
-}
-
-.contact-sections textarea::placeholder {
-  color: #FFF;
-  opacity: 100%;
 }

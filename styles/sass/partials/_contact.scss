@@ -1,30 +1,25 @@
-.contact-form-info {
-  background-color: $light-primary;
-  form {
-    position: relative;
-    top: -140px;
-    background-color: $tertiary;
-    width: 70%;
-    box-shadow: 20px 20px $secondary;
-    fieldset {
-      width: 100%;
-      padding: 60px;
-    }
+// contact section header
+.contact {
+  background-image: url(../assets/contact-header.jpg);
+  height: 55vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+// icon list
+.contact-icons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  span {
+    font-size: 1.1rem;
   }
 }
 
-.contact-sections {
-  display: flex;
-  justify-content: space-between;
-}
-
-// contact form styling
-button {
-  color: $tertiary;
-  background-color: $light-secondary;
-}
-
-// social icoms
+// contact social icoms
 .contact-info-icons {
   width: 22%;
   a {
@@ -37,3 +32,5 @@ button {
     list-style-type: none;
   }
 }
+
+
