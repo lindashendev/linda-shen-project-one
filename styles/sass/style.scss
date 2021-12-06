@@ -6,139 +6,48 @@
 @import "partials/blog";
 @import "partials/forms";
 @import "partials/contact";
-
-// mixin fontsize
-@mixin fontSize($sizeValue) {
-  font-size: ($sizeValue/20) * 1rem;
-}
-
-@mixin lineHeight($heightValue) {
-  line-height: ($heightValue/20) * 1;
-}
-
-@mixin letterSpacing($spaceValue) {
-  letter-spacing: $spaceValue * 1px;
-}
-
-@mixin position($type, $top, $left) {
-  position: $type;
-  top: $top;
-  left: $left;
-}
-// mixin flex 
-@mixin flex($direction) {
-  display: flex;
-  flex-direction: $direction;
-}
+@import "partials/typography";
 
 // typography styling
-
 html {
   font-size: 125%;
 }
 
-body {
-  font-family: $baseFont;
-  color: $primary;
-  @include fontSize(20);
-  @include lineHeight(28);
-  @include letterSpacing(2);
-}
-
-h1, 
-h2,
-h3,
-h4,
-h5,
-h6 
-{
-  font-family: $primaryFont;
-  font-weight: 400;
-  margin: 0;
-}
-
-h1 {
-  @include fontSize(68);
-  @include lineHeight(64);
-}
-
-h2 {
-  @include fontSize(55);
-  @include lineHeight(30);
-}
-
-h3 {
-  @include fontSize(43);
-  @include lineHeight(38);
-  @include letterSpacing(2.7);
-}
-
-h4 {
-  @include fontSize(35);
-  @include letterSpacing(2.5);
-}
-
-h5 {
-  @include fontSize(35);
-  @include lineHeight(35);
-  @include letterSpacing(2.5);
-}
-
-h6 {
-  @include fontSize(25);
-  @include letterSpacing(2.5);
-}
-
-.logo {
-  @include fontSize(38);
-  @include lineHeight(24);
-  @include letterSpacing(1.7);
-}
-
-button {
-  @include fontSize(27);
-  @include lineHeight(32);
-  @include letterSpacing(1.4);
-}
-
-nav {
-  @include fontSize(20);
-  @include lineHeight(29);
-  @include letterSpacing(1.4);
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
 // general styling
+main {
+  position: relative;
+}
+
 section {
   padding: 75px 0;
 }
 
 // Home section styling 
-// home background styling
 .home {
   background-image: url(../assets/header-home.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-    h1 {
-      width: 55%;
-      @include fontSize(50);   
-      @include lineHeight(30);
-    }
+  background-position: top center;
+  height: 90vh;
 }
 
+// image position
 .home-box {
+  top: -320px;
+  position: absolute;
   width: 60%;
 }
 
-.learn-techniques {
+// learn new techniques
+.learn-textile {
   background-color: $light-primary;
   .learn-section {
-    margin-top: 200px;
+    position: relative;
+    top: 100px;
+    padding: 100px 0;
     img {
-      margin-top: 50px;
+      position: relative;
+      top: -50px;
       box-shadow: -15px 15px $secondary;
     }
   }
@@ -147,14 +56,18 @@ section {
 .learn-section {
   display: flex;
   justify-content: space-between;
-  .learn-info {
+  .techniques-info {
+    width: 60%;
+  }
+  .techniques-image {
       img {
         align-items: center;
-        width: 500px;
+        width: 100%;
     }
   }
 }
 
+// thread gallery
 .gallery {
   background-color: $tertiary;
   ul {
@@ -163,7 +76,7 @@ section {
   // width: 100%;
   li {
     display: inline-block;
-    width: calc((100%/3) - 30px);
+    width: calc((100%/3) - 15px);
   }
     img {
       width: 100%;
@@ -171,11 +84,16 @@ section {
   }
 }
 
-.navigation-info {
+// community workshops
+.workshops-blog-info {
   background-color: $light-primary;
-  .layout-row-one, .layout-row-two {
-    display: flex;
-  }
+  padding: 100px 0;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .circle-icon {
@@ -193,6 +111,7 @@ section {
     }
 }
 
+// icon and heading positioning
 .icon {
   margin-left: 5px;
 }
@@ -210,141 +129,84 @@ section {
 }
 
 .info-segment {
-  width: calc(100%/2);
+  width: calc((100%/2) - 20px);
   p {
     margin-left: 80px;
   }
 }
 
-// online markets
-.main-info-section {
+// Teal bg - Discover info
+.info-section {
   background-color: $tertiary;
   h4, p {
     color: $light-white;
   }
-  a {
-    background-color: $light-secondary;
-  }
 }
 
-// box shadow effect
-.image-section {
+// image styling
+.layout-section {
   display: flex;
-  padding: 30px 0;
   img {
     box-shadow: 20px 20px $secondary;
   }
+  .image-left {
+  top: -120px;
+  position: relative;
+  width: 40%;
+  }
+  .markets-block {
+    left: 100px;
+    position: relative;
+    width: 40%;
+    height: 100%;
+  }
 }
 
-.discover-markets {
-  position: relative;
-  width: 100%;
-  img {
-    top: -120px;
-    position: absolute;
-    width: 45%;
-  }
-  h4, p, a {
-    position: relative;
-    top: -40px;
-    width: 38%;
-    left: 58%;
-  }
-}
-.discover-markets-info {
-  margin-right: 70px;
-}
-.new-locations {
-  display: flex;
-  position: relative;
-  width: 100%;
-  .locations-info {
+// positioning on second section
+.right-info {
+  .locations-block {
     text-align: right;  
     position: relative;
     margin-left: 100px;
     width: 38%;
+    height: 100%;
     }
   img {
+    box-shadow: -20px 20px $secondary;
     position: absolute;
     right: 0;
     width: 45%;
-    box-shadow: -20px 20px $secondary;
-  }
-  h4, p, a {
-    text-align: right;
-    position: relative;
-    // width: 55%;
   }
 }
 
 // thread background image
 .thread-background {
   background-image: url(../assets/banner.jpg);
+  background-size: cover;
   height: 400px;
 }
 
 // search function
 .search-by-style {
   background-color: $light-primary;
+  padding: 120px 0;
   .search-styles {
     text-align: center;
     margin: 0 auto;
-    p {
-      margin-bottom: 50px;
-    }
   }
-}
-
-// blog typography mixins
-.blog {
-  background-image: url(../assets/blog-header.jpg);
-  background-size: fill;
-  background-repeat: no-repeat;
-  background-position: top right;
-  height: 50vh;
-    h1 {
-      width: 55%;
-      @include fontSize(50);   
-      @include lineHeight(30);
-    }
-}
-// section padding reset
-.main-blog-content {
-  padding: 0;
-}
-// blog font size
-.blog-comments {
-  @include fontSize(20);
-  @include letterSpacing(1.2);
-}
-
-// mixin font size for blog form
-button {
-  @include fontSize(20);
 }
 
 // Get in touch 
 .contact-form {
   background-image: url(../assets/contact-header.jpg);
   height: 70vh;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
 }
 
-.contact-info-icons {
-  @include fontSize(18);
-}
-
-.address-info {
-  padding: 0;
-  li {
-    @include fontSize(18);
-  }
-}
-
 .contact-sections {
-  ::placeholder {
+  textarea::placeholder {
     color: $light-white;
     opacity: 100%;
   }

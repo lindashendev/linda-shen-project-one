@@ -1,0 +1,122 @@
+@mixin fontSize($sizeValue) {
+  font-size: ($sizeValue/20) * 1rem;
+}
+
+@mixin lineHeight($heightValue) {
+  line-height: ($heightValue/20) * 1;
+}
+
+@mixin letterSpacing($spaceValue) {
+  letter-spacing: $spaceValue * 1px;
+}
+
+body {
+  font-family: $baseFont;
+  color: $primary;
+  @include fontSize(20);
+  @include lineHeight(28);
+  @include letterSpacing(2);
+}
+
+// heading sizes
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 
+{
+  font-family: $primaryFont;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  @include fontSize(68);
+  @include lineHeight(64);
+}
+
+h2 {
+  @include fontSize(50);
+  @include lineHeight(30);
+}
+
+h3 {
+  @include fontSize(43);
+  @include lineHeight(38);
+  @include letterSpacing(2.7);
+}
+
+h4 {
+  @include fontSize(35);
+  @include letterSpacing(2.5);
+}
+
+h5 {
+  @include fontSize(35);
+  @include lineHeight(35);
+  @include letterSpacing(2.5);
+}
+
+h6 {
+  @include fontSize(25);
+  @include letterSpacing(2.5);
+}
+
+.logo {
+  @include fontSize(32);
+  @include lineHeight(24);
+  @include letterSpacing(1.7);
+}
+
+button {
+  @include fontSize(27);
+  @include lineHeight(32);
+  @include letterSpacing(1.4);
+}
+
+nav {
+  @include fontSize(20);
+  @include lineHeight(29);
+  @include letterSpacing(1.4);
+}
+
+// home
+.home {
+  h1 {
+  margin-top: 50px;
+  width: 50%;
+  @include fontSize(45);   
+  @include lineHeight(30);
+}
+}
+// blog
+.blog-comments {
+  @include fontSize(20);
+  @include letterSpacing(1.2);
+}
+
+// mixin font size for blog form
+button {
+  @include fontSize(20);
+}
+
+.blog {
+      h1 {
+      width: 55%;
+      @include fontSize(50);   
+      @include lineHeight(30);
+    }
+}
+
+// contact page
+.contact-info-icons {
+  @include fontSize(18);
+}
+
+.address-info {
+  padding: 0;
+  li {
+    @include fontSize(18);
+  }
+}

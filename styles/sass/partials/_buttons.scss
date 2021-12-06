@@ -1,24 +1,27 @@
 // Home button
-p ~ a {
+// Dark button
+.btn {
   font-family: $primaryFont;
   color: $primary;
-  text-decoration: none;
-  padding: 2px 35px;
+  margin-top: 20px;
+  display: inline-block;
+  a {
+    text-decoration: none;
+    padding: 2px 35px;
+  }
 }
 
-// Home
-
-// Dark theme button
-.learn-techniques, .search-by-style {
+// Light button
+.btn-primary-style {
   a {
     background-color: $primary;
     color: $light-white;
   }
 }
 
-// Light theme button
-.company-descriptions {
+.btn-secondary-style {
   a {
-    background: $light-secondary;
+    background-color: $light-secondary;
+    color: $primary;
   }
 }

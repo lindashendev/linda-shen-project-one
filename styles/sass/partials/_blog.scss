@@ -1,5 +1,16 @@
-// blog styling starts
 // blog styles
+
+.blog {
+  background-image: url(../assets/blog-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 50vh;
+}
+// section padding reset
+.main-blog-content {
+  padding: 0;
+}
 
 // background color
 .blog-backdrop {
@@ -9,11 +20,12 @@
     display: flex;
     justify-content: space-between;
     height: 100%;
+      p, ul {
+      margin: 10px;
+      }
   }
 }
-p, ul {
-  margin: 10px;
-}
+
 // main article
 .new-collection {
   background-color: $tertiary;
