@@ -5,6 +5,7 @@
 @import "partials/buttons";
 @import "partials/blog";
 @import "partials/forms";
+@import "partials/contact";
 
 // mixin fontsize
 @mixin fontSize($sizeValue) {
@@ -320,4 +321,31 @@ section {
 // mixin font size for blog form
 button {
   @include fontSize(20);
+}
+
+// Get in touch 
+.contact-form {
+  background-image: url(../assets/contact-header.jpg);
+  height: 70vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.contact-info-icons {
+  @include fontSize(18);
+}
+
+.address-info {
+  padding: 0;
+  li {
+    @include fontSize(18);
+  }
+}
+
+.contact-sections {
+  ::placeholder {
+    color: $light-white;
+    opacity: 100%;
+  }
 }

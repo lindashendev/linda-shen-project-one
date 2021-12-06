@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header>
+  <header class="contact-form">
     <!-- start of nav -->
-    <nav>
-      <p><a href="index.html">Textilee</a></p>
+    <nav class="wrapper">
+      <p class="logo"><a href="index.html">Textilee</a></p>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="#">About</a></li>
@@ -24,39 +24,43 @@
       </ul>
     </nav>
     <!-- start of h1 -->
-    <h1>Get in touch</h1>
+    <div class="wrapper">
+      <h1>Get in touch</h1>
+    </div>
   </header>
   <!-- start of main -->
-  <main>
-    <form action="submit">
-      <fieldset>
-        <label for="contact-name">Name</label>
-        <input type="text" name="contact-name" placeholder="Name">
+  <main class="contact-form-info">
+    <section class="contact-sections wrapper">
+      <form action="submit">
+        <fieldset>
+          <label for="contact-name" class="sr-only">Name</label>
+          <input type="text" name="contact-name" placeholder="Name">
 
-        <label for="contact-email">Email address</label>
-        <input type="email" name="contact-email" placeholder="Email address">
+          <label for="contact-email" class="sr-only">Email address</label>
+          <input type="email" name="contact-email" placeholder="Email address">
 
-        <label for="contact-message">Message</label>
-        <textarea name="contact-message" placeholder="Message" id="" cols="30" rows="10"></textarea>
-        <button type="submit">submit</button>
-      </fieldset>
-    </form>
-    <div class="contact-info">
-      <div class="contact-icons">
-        <span class="fab fa-facebook-f"></span>
-        <span class="fab fa-instagram"></span>
-        <span class="fab fa-twitter"></span>
-        <span class="fab fa-whatsapp"></span>
+          <label for="contact-message" class="sr-only">Message</label>
+          <textarea name="contact-message" placeholder="Message" id="" cols="30" rows="6"></textarea>
+          <button type="submit">submit</button>
+        </fieldset>
+      </form>
+      <div class="contact-info-icons">
+        <div class="contact-icons">
+          <span class="fab fa-facebook-f"></span>
+          <span class="fab fa-instagram"></span>
+          <span class="fab fa-twitter"></span>
+          <span class="fab fa-whatsapp"></span>
+        </div>
+        <a href="mailto:info@email.com">info@email.com</a>
+        <ul class="address-info">
+          <li>123 - 456 - 7890</li>
+          <li>123 Queen Street West,</li>
+          <li>Unit 10</li>
+          <li>Toronto, Ontario</li>
+          <li>M5V 2D5</li>
+        </ul>
       </div>
-      <a href="mailto:info@email.com">info@email.com</a>
-      <ul class="address-info">
-        <li>123 - 456 - 7890</li>
-        <li>123 Queen Street West,</li>
-        <li>Unit 10</li>
-        <li>Toronto, Ontario</li>
-        <li>M5V 2D5</li>
-      </ul>
-    </div>
+    </section>
   </main>
   <footer>
     <p>Copyright © 2019 Juno College</p>
