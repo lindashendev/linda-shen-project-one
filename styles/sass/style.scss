@@ -4,6 +4,7 @@
 @import "partials/nav";
 @import "partials/buttons";
 @import "partials/blog";
+@import "partials/forms";
 
 // mixin fontsize
 @mixin fontSize($sizeValue) {
@@ -314,4 +315,9 @@ section {
 .blog-comments {
   @include fontSize(20);
   @include letterSpacing(1.2);
+}
+
+// mixin font size for blog form
+button {
+  @include fontSize(20);
 }

@@ -85,22 +85,20 @@
       </div>
       </div>
     <!-- comment section starts -->
-    <div class="wrapper">
-      <form action="submit">
-        <fieldset>
-          <label for="user-name">Name</label>
-          <input type="text" name="user-name" placeholder="name">
+    <form action="submit">
+      <fieldset>
+        <label for="user-name" class="sr-only">Name</label>
+        <input type="text" name="user-name" placeholder="Name">
 
-          <label for="user-email">Email address</label>
-          <input type="email" name="user-email" placeholder="Email address">
+        <label for="user-email" class="sr-only">Email address</label>
+        <input type="email" name="user-email" placeholder="Email address">
 
-          <label for="blog-comment">Comment</label>
-          <textarea name="blog-comment" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+        <label for="blog-comment" class="sr-only">Comment</label>
+        <textarea name="blog-comment" id="" cols="30" rows="10" placeholder="Comment"></textarea>
 
-          <button type="submit">post comment</button>
-        </fieldset>
-      </form>
-  </div>
+        <button type="submit">post comment</button>
+      </fieldset>
+    </form>
   </main>
   <footer>
     <p>Copyright © 2019 Juno College</p>

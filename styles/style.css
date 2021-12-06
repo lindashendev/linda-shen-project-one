@@ -268,7 +268,7 @@ nav a {
 }
 
 footer {
-  background-color: #1A315C;
+  background-color: #161515;
   padding: 8px 0;
   text-align: center;
 }
@@ -402,6 +402,50 @@ p, ul {
 .blog-comment p {
   margin: 0;
   margin-left: 20px;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+input, textarea {
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #0cadc0;
+  padding: 10px 30px;
+  width: calc((100%/2) - 20px);
+}
+
+textarea {
+  background-color: transparent;
+  resize: none;
+  border: 2px solid #0cadc0;
+  padding: 30px 40px;
+  width: 100%;
+}
+
+button {
+  font-family: "Pacifico", cursive;
+  background-color: #1A315C;
+  color: #FFF;
+  border: 0;
+  width: 100%;
+  padding: 8px 0;
+  letter-spacing: 3px;
 }
 
 html {
@@ -698,4 +742,8 @@ section {
 .blog-comments {
   font-size: 1rem;
   letter-spacing: 1.2px;
+}
+
+button {
+  font-size: 1rem;
 }
