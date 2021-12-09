@@ -904,3 +904,232 @@ section {
 .contact-icons span {
   font-size: 1.1rem;
 }
+
+@media (max-width: 940px) {
+  .section-info-outer,
+.gallery,
+.section-main-container,
+.info-main,
+.left-block-content,
+.right-block-content,
+.contact-section-outer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .home h1 {
+    font-size: 3.75rem;
+    padding: 50px 0;
+  }
+
+  .home-box-pic {
+    visibility: hidden;
+  }
+
+  .section-info {
+    padding: 0;
+  }
+
+  .section-info-outer {
+    padding: 20px 0;
+    padding-bottom: 180px;
+  }
+  .section-info-outer .section-info-content {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .section-info-outer .section-info-image {
+    margin: 0 auto;
+    margin-top: 130px;
+    width: 80%;
+  }
+
+  .gallery {
+    position: relative;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery ul li {
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px 0;
+  }
+
+  .section-main-info-block {
+    width: 100%;
+  }
+  .section-main-info-block h4 {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .section-main-info-block p {
+    margin: 40px 0;
+  }
+
+  .icon-main {
+    margin: 0 auto;
+  }
+
+  .layout-section img {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+  }
+
+  .left-block-content .description {
+    padding-top: 80px;
+    left: 0;
+    text-align: center;
+    width: 80%;
+  }
+  .left-block-content img {
+    top: 0;
+  }
+
+  .right-block-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .right-block-content .description {
+    padding-top: 80px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .right-block-content img {
+    margin: 0 auto;
+    position: relative;
+    -webkit-box-shadow: 20px 20px #0cadc0;
+            box-shadow: 20px 20px #0cadc0;
+  }
+
+  .search-function-inner h4 {
+    font-size: 2rem;
+  }
+
+  .blog-page-container {
+    height: 100%;
+    padding: 100px 0;
+  }
+  .blog-page-container .blog-main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .blog-main-feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    width: 85%;
+    top: 0;
+  }
+  .blog-main-feature img {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 60%;
+    -webkit-box-shadow: 18px 18px #0cadc0;
+            box-shadow: 18px 18px #0cadc0;
+  }
+
+  .article-card {
+    position: relative;
+  }
+  .article-card:after {
+    content: "";
+    -webkit-box-shadow: 0px 0px;
+            box-shadow: 0px 0px;
+  }
+
+  .blog-article-sidebar {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .blog-article-sidebar img {
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 40%;
+    left: 0;
+    top: 60px;
+    -webkit-box-shadow: 18px 18px #0cadc0;
+            box-shadow: 18px 18px #0cadc0;
+  }
+  .blog-article-sidebar .description {
+    padding: 120px 0;
+  }
+
+  .blog-comments-section {
+    color: #1A315C;
+    top: 160px;
+    position: relative;
+  }
+  .blog-comments-section h4 {
+    margin-bottom: 40px;
+  }
+  .blog-comments-section p {
+    color: #161515;
+  }
+
+  .blog-comment {
+    width: 100%;
+  }
+
+  .blog-comment-form fieldset {
+    width: 100%;
+  }
+
+  .contact-section-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-section-container form {
+    left: 0;
+  }
+  .contact-section-container form fieldset {
+    width: 100%;
+  }
+
+  .contact-social-links {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-icons {
+    width: 80%;
+  }
+  .contact-icons span {
+    font-size: 1.5rem;
+  }
+}
