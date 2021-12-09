@@ -6,32 +6,32 @@ nav {
   height: 15vh;
   display: flex;
   justify-content: space-between;
-  p {
-  align-self: center;
-  }
-  ul {
-    display: flex;
-    align-items: center;
-    li {
-      padding: 20px;
-      list-style: none;
-      display: inline-block;
-      position: relative;
-        a {
-          text-transform: uppercase;
-        }
-        a::after {
-          content: "";
-          left: 0;
-          bottom: 10px;
-          position: absolute;
-          width: 100%;
-        }
-        a:hover::after, a:focus::after {
-          border-bottom: 2px solid $secondary;
+    p {
+      align-self: center;
+      }
+    ul {
+      display: flex;
+      align-items: center;
+        li {
+          padding: 20px;
+          list-style: none;
+          display: inline-block;
+          position: relative;
+            a {
+              text-transform: uppercase;
+            }
+            a::after {
+              content: "";
+              left: 0;
+              bottom: 10px;
+              position: absolute;
+              width: 100%;
+            }
+            a:hover::after, a:focus::after {
+              border-bottom: 2px solid $secondary;
+            }
         }
     }
-  }
 }
 
 .logo {
@@ -50,9 +50,9 @@ footer {
   background-color: $dark-secondary;
   padding: 8px 0;
   text-align: center;
-  p {
-    color: white;
-    @include fontSize(18);
-    margin: 0;
-  }
+    p {
+      color: white;
+      @include fontSize(18);
+      margin: 0;
+    }
 }

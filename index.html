@@ -13,40 +13,42 @@
 </head>
 <body>
   <header class="home">
-    <!-- start of the nav -->
-    <nav class="wrapper">
-      <p class="logo"><a href="#">Textilee</a></p>
+    <!-- main navigation -->
+    <div class="wrapper">
+    <nav>
+      <p class="logo"><a href="index.html">Textilee</a></p>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <!-- start of h1 and image -->
-    <div class="wrapper">
       <h1>Textiles for all projects in mind</h1>
     </div>
    </header>
   <!-- start of main site content -->
   <main>
-    <img class="home-box" src="./assets/home-box-header.png" alt="coloured spools of thread with scissors coming upwards to the top right">
+    <img class="home-box-pic" src="./assets/home-box-header.png" alt="coloured spools of thread with scissors coming upwards to the top right">
+
     <!-- start of the learn section -->
-    <section class="learn-textile">
-      <div class="learn-section wrapper">
-        <div class="techniques-info">
+    <section class="section-info">
+      <div class="section-info-outer wrapper">
+        <div class="section-info-content">
           <h2>Learn new techniques</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias ea voluptatibus labore non unde saepe ab quasi dignissimos earum aliquid ad mollitia est cupiditate, suscipit eum repellat impedit? Enim.</p>
           <div class="btn btn-primary-style">
           <a href="#">find out more</a>
           </div>
         </div>
-        <div class="techniques-image">
+        <div class="section-info-image">
           <img src="./assets/small-box.jpg" alt="someone handling pins and pink fabric during an in-class workshop">
         </div>
       </div>
     </section>
-    <!-- start of gallery -->
+
+     <!-- showcase gallery -->
     <section class="gallery">
       <ul class="wrapper">
           <li><img src="./assets/gallery-image-1.jpg" alt="sage and black spools of thread on a dark background"></li>
@@ -54,22 +56,23 @@
         <li><img src="./assets/gallery-image-3.jpg" alt="spools of decorative trim organized on a shelf"></li>
       </ul>
     </section>
+
     <!-- start of events and info section -->
-    <section class="workshops-blog-info">
-      <div class="events wrapper">
-          <div class="info-segment">
+    <section class="section-main-links">
+      <div class="section-main-container wrapper">
+          <div class="section-main-info-block">
             <div class="info-main">
-              <div class="circle-icon">
+              <div class="icon-main">
               <p class="sr-only">White calendar on teal background with check mark</p>
-              <span class="fas fa-calendar-check icon"></span>
+              <span class="fas fa-calendar-check"></span>
             </div>
             <h4>Upcoming Events</h4>
             </div>            
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia veritatis totam hic officiis numquam sed minus quibusdam molestias quis ullam.</p>
           </div>
-          <div class="info-segment">
+          <div class="section-main-info-block">
             <div class="info-main">
-              <div class="circle-icon">
+              <div class="icon-main">
                 <p class="sr-only">User community icon on teal background</p>
                 <span class="fas fa-users"></span>
               </div>
@@ -77,20 +80,21 @@
             </div>           
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis nesciunt dolore aut, voluptas quia incidunt iusto doloremque. Tenetur, exercitationem.</p>
           </div>
+
         <!-- second row of info content -->
-          <div class="info-segment">
+          <div class="section-main-info-block">
             <div class="info-main">
-              <div class="circle-icon">
+              <div class="icon-main">
                  <p class="sr-only">White file icon on teal background</p>
-                <span class="fas fa-file icon"></span>
+                <span class="fas fa-file"></span>
               </div>
             <h4>Blog</h4>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatum quae soluta exercitationem obcaecati quod architecto blanditiis ullam? Officiis, eveniet.</p>
           </div>
-          <div class="info-segment">
+          <div class="section-main-info-block">
             <div class="info-main">
-              <div class="circle-icon">
+              <div class="icon-main">
                 <p class="sr-only">White phone icon on teal background</p>
                 <span class="fas fa-phone"></span>
               </div>
@@ -100,11 +104,12 @@
           </div>
         </div>
     </section>
+
     <!-- start of community events section -->
-    <section class="info-section">
-      <div class="left-info layout-section">
+    <section class="section-locations">
+      <div class="left-block-content layout-section">
         <img src="./assets/left-image.jpg" alt="overlay of pink velvet fabric with wavy folds">
-        <div class="markets-block wrapper">
+        <div class="description wrapper">
           <h4>Discover our online market</h4>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ipsam rem deleniti ducimus assumenda, dolores nobis alias tenetur sunt obcaecati!</p>
           <div class="btn btn-secondary-style">
@@ -112,9 +117,9 @@
           </div>
         </div>
       </div>
-      <div class="right-info layout-section">
+      <div class="right-block-content layout-section">
         <img src="./assets/right-image.jpg" alt="seamstress in green working with a cutout plan ">
-        <div class="locations-block wrapper">
+        <div class="description wrapper">
           <h4>New Locations</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cum quam dolorum eius labore. Facilis cumque ipsum labore dolorem harum.</p>
           <div class="btn btn-secondary-style">
@@ -123,12 +128,14 @@
         </div>
       </div>
     </section>
-    <!-- start of thread background -->
-    <section class="thread-background">
+
+    <!-- thread background -->
+    <section class="brand-image-background">
     </section>
-    <!-- start of search section -->
-    <section class="search-by-style">
-      <div class="search-styles">
+
+    <!-- search functionality -->
+    <section class="search-function">
+      <div class="search-function-inner">
         <div class="wrapper">
           <h4>Search by style</h4>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius fugit quidem laboriosam exercitationem nesciunt veniam quod architecto quis vitae atque. Repellendus illum explicabo perferendis tempora minus at quam nulla fugit.</p>
@@ -139,7 +146,8 @@
      </div> 
     </section>
   </main>  
-  <!-- start of footer -->
+
+  <!-- site footer -->
   <footer>
     <p>Copyright © 2019 Juno College</p>
   </footer>

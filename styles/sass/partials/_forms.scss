@@ -16,7 +16,7 @@ input {
   background-color: transparent;
   border: 0;
   border-bottom: 2px solid $secondary;
-  padding: 10px 30px;
+  padding: 20px 30px;
   width: calc((100%/2) - 20px);
 }
 
@@ -26,36 +26,4 @@ textarea {
   border: 2px solid $secondary;
   padding: 30px 40px;
   width: 100%;
-}
-
-// contact form
-.contact-sections {
-  input::placeholder {
-  color: $light-white;
-  opacity: 100%;
-  }
-  textarea::placeholder {
-    color: $light-white;
-    opacity: 100%;
-  }
-}
-
-.contact-form-info {
-  background-color: $light-primary;
-  form {
-    position: relative;
-    top: -140px;
-    background-color: $tertiary;
-    width: 70%;
-    box-shadow: 20px 20px $secondary;
-    fieldset {
-      width: 100%;
-      padding: 60px;
-    }
-  }
-}
-
-.contact-sections {
-  display: flex;
-  justify-content: space-between;
 }

@@ -31,6 +31,12 @@ h6
   margin: 0;
 }
 
+ul, 
+li {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   @include fontSize(68);
   @include lineHeight(64);
@@ -84,11 +90,11 @@ nav {
 // home
 .home {
   h1 {
-  margin-top: 50px;
-  width: 50%;
-  @include fontSize(45);   
-  @include lineHeight(30);
-}
+    padding: 20px 0;
+    width: 50%;
+    @include fontSize(45);   
+    @include lineHeight(30);
+  }
 }
 // blog
 .blog-comments {
@@ -102,12 +108,12 @@ button {
 }
 
 .blog, .contact {
-      h1 {
-      width: 55%;
-      padding: 80px 0;
-      @include fontSize(50);   
-      @include lineHeight(30);
-    }
+    h1 {
+    width: 55%;
+    padding: 80px 0;
+    @include fontSize(50);   
+    @include lineHeight(30);
+  }
 }
 
 // contact page
@@ -117,7 +123,7 @@ button {
 
 .address-info {
   padding: 0;
-  li {
-    @include fontSize(18);
-  }
+    li {
+      @include fontSize(18);
+    }
 }

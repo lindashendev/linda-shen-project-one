@@ -5,9 +5,7 @@
 @import "partials/buttons";
 @import "partials/blog";
 @import "partials/forms";
-@import "partials/contact";
 @import "partials/typography";
-@import "partials/responsive";
 
 // typography styling
 html {
@@ -23,7 +21,7 @@ section {
   padding: 75px 0;
 }
 
-// Home section styling 
+// index.html page 
 .home {
   background-image: url(../assets/header-home.jpg);
   background-size: cover;
@@ -32,72 +30,72 @@ section {
   height: 80vh;
 }
 
-// image position
-.home-box {
+.home-box-pic {
   top: -320px;
   position: absolute;
   width: 60%;
 }
 
 // learn new techniques
-.learn-textile {
+.section-info {
   background-color: $light-primary;
-  .learn-section {
-    position: relative;
-    top: 100px;
-    padding: 100px 0;
+}
+
+.section-info-outer {
+  position: relative;
+  top: 100px;
+  padding: 100px 0;
     img {
       position: relative;
       top: -50px;
       box-shadow: -15px 15px $secondary;
     }
-  }
 }
 
-.learn-section {
+.section-info-outer {
   display: flex;
   justify-content: space-between;
-  .techniques-info {
-    width: 60%;
-  }
-  .techniques-image {
-      img {
-        align-items: center;
-        width: 100%;
+    .section-info-content {
+      width: 60%;
     }
-  }
+      .section-info-image {
+        img {
+          align-items: center;
+          width: 100%;
+        }
+      }
 }
 
-// thread gallery
+// showcase gallery
 .gallery {
   background-color: $tertiary;
-  ul {
-  display: flex;
-  justify-content: space-between;
-  // width: 100%;
-  li {
-    display: inline-block;
-    width: calc((100%/3) - 15px);
-  }
-    img {
-      width: 100%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      // width: 100%;
+        li {
+          display: inline-block;
+          width: calc((100%/3) - 15px);
+        }
+            img {
+              width: 100%;
+            }
     }
-  }
 }
 
 // community workshops
-.workshops-blog-info {
+.section-main-links {
   background-color: $light-primary;
   padding: 100px 0;
 }
 
-.events {
+.section-main-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.circle-icon {
+.icon-main {
   width: 58px;
   height: 58px;
   background-color: $secondary;
@@ -112,8 +110,15 @@ section {
     }
 }
 
-// icon and heading positioning
-.icon {
+.info-main {
+  display: flex;
+    h4 {
+      margin: 0;
+      padding-left: 20px;
+    }
+}
+// center align
+.fa-calendar-check {
   margin-left: 5px;
 }
 
@@ -121,82 +126,147 @@ section {
   margin-left: 7px;
 }
 
-.info-main {
-  display: flex;
-  h4 {
-    margin: 0;
-    padding-left: 20px;
-  }
-}
 
-.info-segment {
+.section-main-info-block {
   width: calc((100%/2) - 20px);
-  p {
-    margin-left: 80px;
-  }
+    p {
+      margin-left: 80px;
+    }
 }
 
-// Teal bg - Discover info
-.info-section {
+// section location callout
+.section-locations {
   background-color: $tertiary;
-  height: 85vh;
-  h4, p {
-    color: $light-white;
-  }
+  padding: 75px 0 0 0;
+    h4, p {
+      color: $light-white;
+    }
 }
 
 // image styling
 .layout-section {
+  padding: 0;
+    img {
+    width: 45%;
+    position: absolute;
+  }
+}
+
+// position on first section
+.left-block-content {
   display: flex;
   position: relative;
-  img {
-    top: -110px;
-    box-shadow: 20px 20px $secondary;
-    width: 50%;
-    position: absolute;
-  }
-  .markets-block {
-    left: 25%;
-    position: relative;
-    width: 35%;
-    height: 100%;
-    margin-bottom: 250px;
-  }
-}
-
-// positioning on second section
-.right-info {
-  position: relative;
-  top: -50px;
-  .locations-block {
-    top: -100px;
-    text-align: right;  
-    position: relative;
-    margin-left: 100px;
-    width: 38%;
-    height: 100%;
+  height: 100%;
+    img {
+      top: -100px;
+      box-shadow: 20px 20px $secondary;
+      left: 0;
     }
-  img {
-    box-shadow: -20px 20px $secondary;
-    position: absolute;
-    right: 0;
-    width: 45%;
-  }
+    .description {
+      left: 25%;
+      position: relative;
+      width: 35%;
+      padding-bottom: 100px;;
+    }
 }
 
-// thread background image
-.thread-background {
+// position on second section
+.right-block-content {
+  position: relative;
+  // top: -80px;
+    .description {
+      text-align: right;  
+      position: relative;
+      margin-left: 100px;
+      width: 38%;
+      padding-bottom: 100px;
+    }
+    img {
+      box-shadow: -20px 20px $secondary;
+      right: 0;
+    }
+}
+
+// background image
+.brand-image-background {
   background-image: url(../assets/banner.jpg);
   background-size: cover;
   height: 400px;
 }
 
 // search function
-.search-by-style {
+.search-function {
   background-color: $light-primary;
   padding: 120px 0;
-  .search-styles {
-    text-align: center;
-    margin: 0 auto;
-  }
+    .search-function-inner {
+      text-align: center;
+      margin: 0 auto;
+    }
 }
+
+// site contact section 
+.contact {
+  background-image: url(../assets/contact-header.jpg);
+  height: 55vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+// contact form
+.contact-section-container {
+  background-color: $light-primary;
+    form {
+      position: relative;
+      top: -140px;
+      left: -40px;
+      background-color: $tertiary;
+      box-shadow: 20px 20px $secondary;
+        fieldset {
+          width: 100%;
+          padding: 60px;
+        }
+    }
+}
+
+// placeholder opacity
+.contact-section-outer {
+  display: flex;
+  justify-content: space-between;
+    input::placeholder {
+      color: $light-white;
+      opacity: 100%;
+    }
+    textarea::placeholder {
+      color: $light-white;
+      opacity: 100%;
+    }
+}
+
+// contact social icoms
+.contact-social-links {
+  width: 30%;
+  margin-left: 50px;
+    a {
+      margin: 20px 0;
+      display: inline-block;
+      color: inherit;
+      text-decoration: none;
+    }
+    li {
+      color: $dark-secondary;
+      list-style-type: none;
+    }
+}
+
+// icon list
+.contact-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+    span {
+      font-size: 1.1rem;
+    }
+}
+
+@import "partials/responsive";

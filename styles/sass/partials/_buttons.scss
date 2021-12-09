@@ -4,10 +4,10 @@
   color: $primary;
   margin-top: 10px;
   display: inline-block;
-  a {
-    text-decoration: none;
-    padding: 2px 35px;
-  }
+    a {
+      text-decoration: none;
+      padding: 2px 35px;
+    }
 }
 
 // Light button
@@ -38,9 +38,9 @@ button {
 }
 
 
-.contact-form-info {
+.contact-section-container {
   button {
-  color: $tertiary;
-  background-color: $light-secondary;
-}
+    color: $tertiary;
+    background-color: $light-secondary;
+  }
 }
