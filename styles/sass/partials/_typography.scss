@@ -117,6 +117,10 @@ nav {
 }
 
 // mixin font size for blog form
+.btn {
+  @include fontSize(20);
+}
+
 button {
   @include fontSize(20);
 }

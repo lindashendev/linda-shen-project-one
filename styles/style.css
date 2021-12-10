@@ -4,6 +4,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
 }
@@ -332,6 +336,10 @@ nav {
   letter-spacing: 1.2px;
 }
 
+.btn {
+  font-size: 1rem;
+}
+
 button {
   font-size: 1rem;
 }
@@ -432,7 +440,7 @@ footer p {
 .btn {
   font-family: "Pacifico", cursive;
   color: #1A315C;
-  margin-top: 10px;
+  margin-top: 15px;
   display: inline-block;
 }
 .btn a {
@@ -649,7 +657,7 @@ section {
 }
 
 .home-box-pic {
-  top: -320px;
+  top: -280px;
   position: absolute;
   width: 60%;
 }
@@ -660,7 +668,7 @@ section {
 
 .section-info-outer {
   position: relative;
-  top: 100px;
+  top: 130px;
   padding: 100px 0;
 }
 .section-info-outer img {
@@ -930,12 +938,11 @@ section {
 .contact-icons span {
   font-size: 1.1rem;
 }
+.contact-icons li {
+  margin-right: 20px;
+}
 
 @media (max-width: 940px) {
-  .home-box-pic {
-    display: none;
-  }
-
   .btn {
     font-family: "Pacifico", cursive;
     color: #1A315C;
@@ -1003,8 +1010,8 @@ section {
   }
 
   .home h1 {
-    width: 80%;
-    font-size: 3rem;
+    width: 70%;
+    font-size: 2.5rem;
   }
 
   .section-info {
@@ -1094,6 +1101,11 @@ section {
 
   .search-function-inner h4 {
     font-size: 2rem;
+  }
+
+  .blog {
+    background-position: 30%;
+    height: 55vh;
   }
 
   .blog-page-container {
@@ -1210,9 +1222,55 @@ section {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 768px) {
+  .home h1 {
+    padding: 40px 0;
+    width: 80%;
+    font-size: 2.1rem;
+  }
+
+  .home-box-pic {
+    top: -250px;
+    width: 65%;
+  }
+
+  .section-main-info-block h4 {
+    margin-top: 10px;
+  }
+  .section-main-info-block p {
+    text-align: center;
+    margin: 20px 0px 50px 0px;
+  }
+
+  fieldset {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+  }
+
+  textarea {
+    margin-top: 30px;
+  }
+
+  .contact h1 {
+    width: 80%;
+  }
+
+  .contact-icons {
+    margin: 0 auto;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 480px) {
   .home {
-    background-position: 50%;
+    background-position: 40%;
     height: 70vh;
   }
   .home .wrapper {
@@ -1221,7 +1279,11 @@ section {
   .home .wrapper h1 {
     padding: 20px 0;
     width: 90%;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+  }
+
+  .home-box-pic {
+    visibility: hidden;
   }
 
   .logo {
@@ -1337,24 +1399,6 @@ section {
   }
   .blog-user-comment .blog-comment p {
     margin: 10px 0;
-  }
-
-  fieldset {
-    width: 100%;
-  }
-
-  input {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 20px 10px;
-  }
-
-  textarea {
-    margin-top: 30px;
-  }
-
-  .contact h1 {
-    width: 80%;
   }
 
   .contact-section-container form {

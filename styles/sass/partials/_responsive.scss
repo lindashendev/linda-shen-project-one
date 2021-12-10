@@ -37,9 +37,7 @@ $mobile-width: 480px;
 
 // medium desktop or large tablet - 940px and below
 @include media-lg {
-.home-box-pic {
-display: none;
-}
+
 .btn {
   font-family: $primaryFont;
   color: $primary;
@@ -102,8 +100,8 @@ display: none;
 
 .home {
   h1 {
-    width: 80%;
-    @include fontSize(60);
+    width: 70%;
+    @include fontSize(50);
   }
 }
 
@@ -200,6 +198,10 @@ display: none;
 }
 
 // Blog Media Query
+.blog {
+  background-position: 30%;
+  height: 55vh;
+}
 .blog-page-container {
   height: 100%;
   padding: 100px 0;
@@ -299,28 +301,80 @@ display: none;
       font-size: 1.5rem;
     }
 }
-
 }
 
  //tablet - 768px and below
 @include media-md {
+.home {
+  h1 {
+    padding: 40px 0;
+    width: 80%;
+    @include fontSize(42);   
+  }
+}
 
+.home-box-pic {
+  top: -250px;
+  width: 65%;
+}
+
+.section-main-info-block {
+  h4 {
+    margin-top: 10px;
+  }
+  p {
+    text-align: center;
+    margin: 20px 0px 50px 0px;
+  }
+}
+
+fieldset {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+
+textarea {
+  margin-top: 30px;
+}
+  // CONTACT PAGE
+.contact {
+  h1 {
+    width: 80%;
+  }
+}
+
+.contact-icons {
+  margin: 0 auto;
+}
+
+.btn {
+  margin-top: 30px;
+}
 } 
 
 // mobile - 480px and below
 @include media-sm {
 // general typography changes 
 .home {
-  background-position: 50%;
+  background-position: 40%;
   height: 70vh;
   .wrapper {
     height: 100%;
       h1 {
         padding: 20px 0;
         width: 90%;
-        @include fontSize(50);   
+        @include fontSize(48);   
       }
   }
+}
+
+.home-box-pic {
+  visibility: hidden;
 }
 
   .logo {
@@ -443,27 +497,6 @@ display: none;
         margin: 10px 0;
       }
     }
-}
-
-fieldset {
-  width: 100%;
-}
-
-input {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 20px 10px;
-}
-
-textarea {
-  margin-top: 30px;
-}
-
-// CONTACT PAGE
-.contact {
-  h1 {
-    width: 80%;
-  }
 }
 
 .contact-section-container {

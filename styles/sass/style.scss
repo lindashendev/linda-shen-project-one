@@ -30,7 +30,7 @@ section {
 }
 
 .home-box-pic {
-  top: -320px;
+  top: -280px;
   position: absolute;
   width: 60%;
 }
@@ -42,7 +42,7 @@ section {
 
 .section-info-outer {
   position: relative;
-  top: 100px;
+  top: 130px;
   padding: 100px 0;
     img {
       position: relative;
@@ -265,6 +265,9 @@ section {
   width: 55%;
     span {
       font-size: 1.1rem;
+    }
+    li {
+      margin-right: 20px;
     }
 }
 
