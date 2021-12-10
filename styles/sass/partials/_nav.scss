@@ -2,8 +2,6 @@
   font-size: ($sizeValue/20) * 1rem;
 }
 
-
-
 nav {
   height: 15vh;
   display: flex;
@@ -30,10 +28,10 @@ nav {
             }
             a::after {
               content: "";
-              left: 0;
+              left: 10%;
               bottom: 10px;
               position: absolute;
-              width: 100%;
+              width: 76%;
             }
             a:hover::after, a:focus::after {
               border-bottom: 2px solid $secondary;
@@ -46,6 +44,7 @@ nav {
   font-family: $primaryFont;
   font-weight: 400;
 }
+
 nav {
   a {
     color: inherit;

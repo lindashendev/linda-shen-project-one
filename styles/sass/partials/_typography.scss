@@ -1,15 +1,19 @@
+// font size
 @mixin fontSize($sizeValue) {
   font-size: ($sizeValue/20) * 1rem;
 }
 
+// line height
 @mixin lineHeight($heightValue) {
   line-height: ($heightValue/20) * 1;
 }
 
+// letter spacing
 @mixin letterSpacing($spaceValue) {
   letter-spacing: $spaceValue * 1px;
 }
 
+// body font size
 body {
   font-family: $baseFont;
   color: $primary;
@@ -43,6 +47,8 @@ li {
   margin: 0;
   padding: 0;
 }
+
+// heading sizes
 
 h1 {
   @include fontSize(68);
@@ -98,9 +104,10 @@ nav {
 .home {
   h1 {
     padding: 20px 0;
-    width: 50%;
-    @include fontSize(45);   
-    @include lineHeight(30);
+    width: 60%;
+    @include fontSize(54);   
+    @include lineHeight(28);
+    @include letterSpacing(1);
   }
 }
 // blog

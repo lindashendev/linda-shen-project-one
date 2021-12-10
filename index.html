@@ -12,14 +12,15 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+  <a href="#maincontent" class="skip-link">Skip to main content</a>
   <header class="home">
     <!-- main navigation -->
     <div class="wrapper">
     <nav>
       <p class="logo"><a href="index.html">Textilee</a></p>
       <div class="dropdown">
-        <!-- <span class="fas fa-bars"></span> -->
-        <span class="fas fa-bars"></span>
+        <span class="fas fa-bars" aria-hidden="true"></span>
+        <span class="sr-only">Dropdown menu</span>
         <ul >
           <li><a href="index.html">Home</a></li>
           <li><a href="#">About</a></li>
@@ -35,8 +36,8 @@
     </div>
    </header>
   <!-- start of main site content -->
-  <main>
-    <img class="home-box-pic" src="./assets/home-box-header.png" alt="coloured spools of thread with scissors coming upwards to the top right">
+  <main id="maincontent">
+    <img class="home-box-pic" src="./assets/home-box-header.png" alt="Coloured spools of thread with overlay scissors">
     <!-- start of the learn section -->
     <section class="section-info">
       <div class="section-info-outer wrapper">
@@ -48,7 +49,7 @@
           </div>
         </div>
         <div class="section-info-image">
-          <img src="./assets/small-box.jpg" alt="someone handling pins and pink fabric during an in-class workshop">
+          <img src="./assets/small-box.jpg" alt="Closeup of woman using sewing tools">
         </div>
       </div>
     </section>
@@ -56,9 +57,9 @@
      <!-- showcase gallery -->
     <section class="gallery">
       <ul class="wrapper">
-          <li><img src="./assets/gallery-image-1.jpg" alt="sage and black spools of thread on a dark background"></li>
-        <li><img src="./assets/gallery-image-2.jpg" alt="a small spool of white thread with a measuring tape on a silky caramel fabric"></li>
-        <li><img src="./assets/gallery-image-3.jpg" alt="spools of decorative trim organized on a shelf"></li>
+          <li><img src="./assets/gallery-image-1.jpg" alt="Closeup of dark green spools of spread on a brown background"></li>
+        <li><img src="./assets/gallery-image-2.jpg" alt="Small spool of white thread with a measuring tape on a caramel satin fabric"></li>
+        <li><img src="./assets/gallery-image-3.jpg" alt="Large spools thread of decorative trim on a shelf"></li>
       </ul>
     </section>
 
@@ -68,8 +69,8 @@
           <div class="section-main-info-block">
             <div class="info-main">
               <div class="icon-main">
-              <p class="sr-only">White calendar on teal background with check mark</p>
-              <span class="fas fa-calendar-check"></span>
+                <span class="fas fa-calendar-check" aria-hidden="true"></span>
+                <span class="sr-only">White calendar on teal background with check mark</span>
             </div>
             <h4>Upcoming Events</h4>
             </div>            
@@ -78,8 +79,8 @@
           <div class="section-main-info-block">
             <div class="info-main">
               <div class="icon-main">
-                <p class="sr-only">User community icon on teal background</p>
-                <span class="fas fa-users"></span>
+                <span class="fas fa-users" aria-hidden="true"></span>
+                <span class="sr-only">User community icon on teal background</span>
               </div>
             <h4>Community</h4>
             </div>           
@@ -90,8 +91,8 @@
           <div class="section-main-info-block">
             <div class="info-main">
               <div class="icon-main">
-                 <p class="sr-only">White file icon on teal background</p>
-                <span class="fas fa-file"></span>
+                <span class="fas fa-file" aria-hidden="true"></span>
+                <span class="sr-only">White file icon on teal background</span>
               </div>
             <h4 >Blog</h4>
             </div>
@@ -100,8 +101,8 @@
           <div class="section-main-info-block">
             <div class="info-main">
               <div class="icon-main">
-                <p class="sr-only">White phone icon on teal background</p>
-                <span class="fas fa-phone"></span>
+                <span class="fas fa-phone" aria-hidden="true"></span>
+                <span class="sr-only">White phone icon on teal background</span>
               </div>
             <h4>Get in Touch</h4>
             </div>
@@ -113,7 +114,7 @@
     <!-- start of community events section -->
     <section class="section-locations">
       <div class="left-block-content layout-section">
-        <img src="./assets/left-image.jpg" alt="overlay of pink velvet fabric with wavy folds">
+        <img src="./assets/left-image.jpg" alt="Closeup of pink velvet fabric with folds">
         <div class="description wrapper">
           <h4>Discover our online market</h4>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ipsam rem deleniti ducimus assumenda, dolores nobis alias tenetur sunt obcaecati!</p>
@@ -123,7 +124,7 @@
         </div>
       </div>
       <div class="right-block-content layout-section">
-        <img src="./assets/right-image.jpg" alt="seamstress in green working with a cutout plan ">
+        <img src="./assets/right-image.jpg" alt="Seamstress in green working with a cutout plan on a piece of fabric">
         <div class="description wrapper">
           <h4>New Locations</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cum quam dolorum eius labore. Facilis cumque ipsum labore dolorem harum.</p>

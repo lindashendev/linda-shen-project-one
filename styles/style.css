@@ -226,6 +226,134 @@ html {
   overflow: hidden;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  color: #1A315C;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+.dropdown ul {
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 400;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.4rem;
+  line-height: 3.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 2.15rem;
+  line-height: 1.9;
+  letter-spacing: 2.7px;
+}
+
+h4 {
+  font-size: 1.75rem;
+  letter-spacing: 2.5px;
+}
+
+h5 {
+  font-size: 1.75rem;
+  line-height: 1.75;
+  letter-spacing: 2.5px;
+}
+
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: 2.5px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: 1.7px;
+}
+
+button {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  letter-spacing: 1.4px;
+}
+
+nav {
+  font-size: 1rem;
+  line-height: 1.45;
+  letter-spacing: 1.4px;
+}
+
+.home h1 {
+  padding: 20px 0;
+  width: 60%;
+  font-size: 2.7rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.blog-comments {
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+}
+
+button {
+  font-size: 1rem;
+}
+
+.blog h1, .contact h1 {
+  width: 55%;
+  padding: 80px 0;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.contact-info-icons {
+  font-size: 0.9rem;
+}
+
+.address-info {
+  padding: 0;
+}
+.address-info li {
+  font-size: 0.9rem;
+}
+
 .wrapper {
   width: 85%;
   margin: 0 auto;
@@ -271,10 +399,10 @@ nav ul li a {
 }
 nav ul li a::after {
   content: "";
-  left: 0;
+  left: 10%;
   bottom: 10px;
   position: absolute;
-  width: 100%;
+  width: 76%;
 }
 nav ul li a:hover::after, nav ul li a:focus::after {
   border-bottom: 2px solid #0cadc0;
@@ -498,120 +626,6 @@ textarea {
   border: 2px solid #0cadc0;
   padding: 30px 40px;
   width: 100%;
-}
-
-body {
-  font-family: "Lato", Arial, sans-serif;
-  color: #1A315C;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  letter-spacing: 2px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  margin: 0;
-}
-
-.dropdown ul {
-  font-family: "Lato", Arial, sans-serif;
-  font-weight: 400;
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-size: 3.4rem;
-  line-height: 3.2;
-}
-
-h2 {
-  font-size: 2.5rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-size: 2.15rem;
-  line-height: 1.9;
-  letter-spacing: 2.7px;
-}
-
-h4 {
-  font-size: 1.75rem;
-  letter-spacing: 2.5px;
-}
-
-h5 {
-  font-size: 1.75rem;
-  line-height: 1.75;
-  letter-spacing: 2.5px;
-}
-
-h6 {
-  font-size: 1.25rem;
-  letter-spacing: 2.5px;
-}
-
-.logo {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  letter-spacing: 1.7px;
-}
-
-button {
-  font-size: 1.35rem;
-  line-height: 1.6;
-  letter-spacing: 1.4px;
-}
-
-nav {
-  font-size: 1rem;
-  line-height: 1.45;
-  letter-spacing: 1.4px;
-}
-
-.home h1 {
-  padding: 20px 0;
-  width: 50%;
-  font-size: 2.25rem;
-  line-height: 1.5;
-}
-
-.blog-comments {
-  font-size: 1rem;
-  letter-spacing: 1.2px;
-}
-
-button {
-  font-size: 1rem;
-}
-
-.blog h1, .contact h1 {
-  width: 55%;
-  padding: 80px 0;
-  font-size: 2.5rem;
-  line-height: 1.5;
-}
-
-.contact-info-icons {
-  font-size: 0.9rem;
-}
-
-.address-info {
-  padding: 0;
-}
-.address-info li {
-  font-size: 0.9rem;
 }
 
 html {

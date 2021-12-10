@@ -12,13 +12,15 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+  <a href="#maincontent" class="skip-link">Skip to main content</a>
   <header class="contact">
     <div class="wrapper">
       <!-- main navigation -->
       <nav>
         <p class="logo"><a href="index.html">Textilee</a></p>
         <div class="dropdown">
-          <span class="fas fa-bars"></span>
+          <span class="fas fa-bars" aria-hidden="true"></span>
+          <span class="sr-only">Dropdown menu</span>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
@@ -33,27 +35,27 @@
   </header>
 
   <!-- start of main -->
-  <main class="contact-section-container">
+  <main class="contact-section-container" id="maincontent">
     <section class="contact-section-outer wrapper">
       <form action="submit">
         <fieldset>
           <label for="contact-name" class="sr-only">Name</label>
-          <input type="text" name="contact-name" placeholder="Name">
+          <input type="text" required="true" name="contact-name" placeholder="Name">
 
           <label for="contact-email" class="sr-only">Email address</label>
-          <input type="email" name="contact-email" placeholder="Email address">
+          <input type="email" required="true" name="contact-email" placeholder="Email address">
 
           <label for="contact-message" class="sr-only">Message</label>
-          <textarea name="contact-message" placeholder="Message" id="" cols="30" rows="6"></textarea>
+          <textarea name="contact-message" required="true" placeholder="Message" cols="30" rows="6"></textarea>
           <button type="submit">submit</button>
         </fieldset>
       </form>
       <div class="contact-social-links">
         <ul class="contact-icons">
-          <li><span class="fab fa-facebook-f"></span></li>
-          <li><span class="fab fa-instagram"></span></li>
-          <li><span class="fab fa-twitter"></span></li>
-          <li><span class="fab fa-whatsapp"></span></li>
+          <li><span class="fab fa-facebook-f" aria-hidden="true"></span><span>Visit our Facebook page</span></li>
+          <li><span class="fab fa-instagram" aria-hidden="true"></span><span>Visit our Instagram page</span></li>
+          <li><span class="fab fa-twitter" aria-hidden="true"></span><span>Visit our Twitter page</span></li>
+          <li><span class="fab fa-whatsapp" aria-hidden="true"></span><span>Contact us on our Whatsapp</span></li>
         </ul>
         <a href="mailto:info@email.com">info@email.com</a>
         <ul class="address-info">

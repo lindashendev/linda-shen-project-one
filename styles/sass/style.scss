@@ -1,11 +1,11 @@
-@import "partials/normalize";
+@import "partials/setup";
 @import "partials/variables";
+@import "partials/typography";
 @import "partials/wrapper";
 @import "partials/nav";
 @import "partials/buttons";
 @import "partials/blog";
 @import "partials/forms";
-@import "partials/typography";
 
 // typography styling
 html {

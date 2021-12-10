@@ -12,13 +12,15 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+  <a href="#maincontent" class="skip-link">Skip to main content</a>
    <header class="blog">
     <!-- main navigation -->
     <div class="wrapper">
       <nav>
         <p class="logo"><a href="index.html">Textilee</a></p>
         <div class="dropdown">
-          <span class="fas fa-bars"></span> 
+          <span class="fas fa-bars" aria-hidden="true"></span> 
+          <span class="sr-only">Dropdown menu</span>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
@@ -31,12 +33,12 @@
       <h1>Blog</h1>
     </div>
   </header>
-  <main class="blog-page-container">
+  <main class="blog-page-container" id="maincontent">
 
     <!-- Main Blog Section starts -->
     <section class="blog-main-content">
       <article class="blog-main-feature">
-        <img src="./assets/blog-post-image.jpg" alt="">
+        <img src="./assets/blog-post-image.jpg" alt="Denim fabric stack">
 
         <!-- Blog Article starts -->
         <div class="article-card">
@@ -51,7 +53,7 @@
         </div>
       </article>
       <aside class="blog-article-sidebar">
-        <img src="./assets/sidebar-image.jpg" alt="">
+        <img src="./assets/sidebar-image.jpg" alt="Stacked roll of canvas fabric">
         <div class="aside-article wrapper">
           <div class="description">
             <h4>Our mission</h4>
@@ -98,13 +100,13 @@
     <form class="blog-comment-form" action="submit">
       <fieldset>
         <label for="user-name" class="sr-only">Name</label>
-        <input type="text" name="user-name" placeholder="Name">
+        <input type="text" required="true" name="user-name" placeholder="Name">
 
         <label for="user-email" class="sr-only">Email address</label>
-        <input type="email" name="user-email" placeholder="Email address">
+        <input type="email" required="true" name="user-email" placeholder="Email address">
 
         <label for="blog-comment" class="sr-only">Comment</label>
-        <textarea name="blog-comment" id="" cols="35" rows="10" placeholder="Comment"></textarea>
+        <textarea name="blog-comment" required="true" cols="35" rows="10" placeholder="Comment"></textarea>
 
         <button type="submit">post comment</button>
       </fieldset>
