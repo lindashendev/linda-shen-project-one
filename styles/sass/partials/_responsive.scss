@@ -32,9 +32,6 @@ $mobile-width: 480px;
 // media query application 
 // desktop - 1024px and below
 @include media-xl {
-  .home-box-pic {
-    width: 50%;
-  }
 } 
 
 // medium desktop or large tablet - 940px and below
@@ -45,7 +42,6 @@ $mobile-width: 480px;
   color: $primary;
   margin-top: 10px;
   display: inline-block;
-  // width: 100%;
   background-color: $primary;
     a {
       text-decoration: none;
@@ -321,7 +317,6 @@ $mobile-width: 480px;
 
 .home-box-pic {
   top: -250px;
-  width: 65%;
 }
 
 .section-main-info-block {
