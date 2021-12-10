@@ -325,7 +325,7 @@ nav {
 
 .home h1 {
   padding: 20px 0;
-  width: 60%;
+  width: 50%;
   font-size: 2.7rem;
   line-height: 1.4;
   letter-spacing: 1px;
@@ -657,7 +657,7 @@ section {
 }
 
 .home-box-pic {
-  top: -280px;
+  top: -300px;
   position: absolute;
   width: 60%;
 }
@@ -780,7 +780,7 @@ section {
 }
 
 .layout-section {
-  padding: 0;
+  padding: 0px 0px 60px 0px;
 }
 .layout-section img {
   width: 45%;
@@ -809,6 +809,7 @@ section {
 
 .right-block-content {
   position: relative;
+  top: 40px;
 }
 .right-block-content .description {
   text-align: right;
@@ -816,6 +817,7 @@ section {
   margin-left: 100px;
   width: 38%;
   padding-bottom: 100px;
+  top: 40px;
 }
 .right-block-content img {
   -webkit-box-shadow: -20px 20px #0cadc0;
@@ -942,6 +944,11 @@ section {
   margin-right: 20px;
 }
 
+@media (max-width: 1024px) {
+  .home-box-pic {
+    width: 50%;
+  }
+}
 @media (max-width: 940px) {
   .btn {
     font-family: "Pacifico", cursive;
@@ -1221,6 +1228,10 @@ section {
   .contact-icons span {
     font-size: 1.5rem;
   }
+
+  .contact-icons {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 768px) {
   .home h1 {
@@ -1413,9 +1424,5 @@ section {
     position: relative;
     top: -80px;
     width: 80%;
-  }
-
-  .contact-icons {
-    margin: 0 auto;
   }
 }

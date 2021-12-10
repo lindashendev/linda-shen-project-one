@@ -32,7 +32,9 @@ $mobile-width: 480px;
 // media query application 
 // desktop - 1024px and below
 @include media-xl {
-
+  .home-box-pic {
+    width: 50%;
+  }
 } 
 
 // medium desktop or large tablet - 940px and below
@@ -301,6 +303,10 @@ $mobile-width: 480px;
       font-size: 1.5rem;
     }
 }
+.contact-icons {
+  margin: 0 auto;
+}
+
 }
 
  //tablet - 768px and below
@@ -512,9 +518,5 @@ textarea {
   position: relative;
   top: -80px;
   width: 80%;
-}
-
-.contact-icons {
-  margin: 0 auto;
 }
 }

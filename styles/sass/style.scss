@@ -30,7 +30,7 @@ section {
 }
 
 .home-box-pic {
-  top: -280px;
+  top: -300px;
   position: absolute;
   width: 60%;
 }
@@ -144,7 +144,7 @@ section {
 
 // image styling
 .layout-section {
-  padding: 0;
+  padding: 0px 0px 60px 0px;
     img {
     width: 45%;
     position: absolute;
@@ -172,13 +172,14 @@ section {
 // position on second section
 .right-block-content {
   position: relative;
-  // top: -80px;
+  top: 40px;
     .description {
       text-align: right;  
       position: relative;
       margin-left: 100px;
       width: 38%;
       padding-bottom: 100px;
+      top: 40px;
     }
     img {
       box-shadow: -20px 20px $secondary;
