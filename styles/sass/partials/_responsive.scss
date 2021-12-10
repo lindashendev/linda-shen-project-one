@@ -465,4 +465,30 @@ input {
 textarea {
   margin-top: 30px;
 }
+
+// CONTACT PAGE
+.contact {
+  h1 {
+    width: 80%;
+  }
+}
+
+.contact-section-container {
+  form {
+    box-shadow: 15px 15px $secondary;
+      fieldset {
+        padding: 50px 30px 80px 30px;
+      }
+  }
+}
+
+.contact-social-links {
+  position: relative;
+  top: -80px;
+  width: 80%;
+}
+
+.contact-icons {
+  margin: 0 auto;
+}
 }

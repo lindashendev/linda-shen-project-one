@@ -1338,4 +1338,26 @@ section {
   textarea {
     margin-top: 30px;
   }
+
+  .contact h1 {
+    width: 80%;
+  }
+
+  .contact-section-container form {
+    -webkit-box-shadow: 15px 15px #0cadc0;
+            box-shadow: 15px 15px #0cadc0;
+  }
+  .contact-section-container form fieldset {
+    padding: 50px 30px 80px 30px;
+  }
+
+  .contact-social-links {
+    position: relative;
+    top: -80px;
+    width: 80%;
+  }
+
+  .contact-icons {
+    margin: 0 auto;
+  }
 }
