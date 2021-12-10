@@ -532,7 +532,7 @@ button {
   position: absolute;
   width: 103%;
   height: 125%;
-  top: -10%;
+  top: -11%;
   left: -5%;
   -webkit-box-shadow: 18px 18px #0cadc0;
           box-shadow: 18px 18px #0cadc0;
@@ -943,6 +943,22 @@ section {
   margin-right: 20px;
 }
 
+@media (max-width: 1024px) {
+  .article-card {
+    top: -21px;
+    position: relative;
+  }
+  .article-card:after {
+    content: "";
+    position: absolute;
+    width: 103%;
+    height: 122%;
+    top: -10%;
+    left: -5%;
+    -webkit-box-shadow: 18px 18px #0cadc0;
+            box-shadow: 18px 18px #0cadc0;
+  }
+}
 @media (max-width: 940px) {
   .btn {
     font-family: "Pacifico", cursive;
