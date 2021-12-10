@@ -2,13 +2,21 @@
   font-size: ($sizeValue/20) * 1rem;
 }
 
+
+
 nav {
   height: 15vh;
   display: flex;
   justify-content: space-between;
+    .dropdown {
+      align-self: center;
+    }
+    .fa-bars {
+      display: none;
+    }  
     p {
       align-self: center;
-      }
+    }
     ul {
       display: flex;
       align-items: center;
