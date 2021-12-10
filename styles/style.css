@@ -531,8 +531,8 @@ button {
   content: "";
   position: absolute;
   width: 103%;
-  height: 120%;
-  top: -8%;
+  height: 125%;
+  top: -10%;
   left: -5%;
   -webkit-box-shadow: 18px 18px #0cadc0;
           box-shadow: 18px 18px #0cadc0;
