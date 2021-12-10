@@ -669,7 +669,7 @@ section {
 .section-info-outer {
   position: relative;
   top: 130px;
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .section-info-outer img {
   position: relative;
@@ -809,7 +809,6 @@ section {
 
 .right-block-content {
   position: relative;
-  top: 40px;
 }
 .right-block-content .description {
   text-align: right;
