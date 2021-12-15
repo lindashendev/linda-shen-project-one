@@ -16,20 +16,3 @@ selectButton.addEventListener("click", function () {
     dropdown.style.display = 'none';
   }
 });
-
-
-// const selectButton = document.querySelector(".fa-bars");
-// const dropdown = document.querySelector("ul");
-// console.log(dropdown);
-// // Add an event listener
-// selectButton.addEventListener("click", function () {
-//   if (dropdown.hidden === true) {
-//     dropdown.hidden = false;
-//     console.log("make invisible");
-//     console.log(dropdown.hidden);
-//   } else {
-//     dropdown.hidden = true;
-//     console.log("make visible");
-//     console.log(dropdown.hidden);
-//   }
-// });
