@@ -56,6 +56,28 @@ $mobile-width: 480px;
 
 // medium desktop or large tablet - 940px and below
 @include media-lg {
+nav {
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  background-color: $light-white;
+  z-index: 10;
+}
+
+.logo {
+  position: relative;
+  left: 60px;
+  align-self: flex-start;
+}
+
+.fa-bars {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
 
 .btn {
   font-family: $primaryFont;
@@ -72,21 +94,24 @@ $mobile-width: 480px;
 .btn-secondary-style {
   background-color: $light-secondary;
 }
-.dropdown {
-  ul {
-    visibility: hidden;
-    position: fixed;
-  }
-  .fa-bars {
-    font-size: 2rem;
-    display: inline-block;
-  }
-}
 
 .dropdown {
+  position: fixed;
+  width: 100%;
   ul {
-    visibility: hidden;
-    position: absolute;
+    display: none;
+    color: $light-white;
+    background-color: $secondary;
+    flex-direction: column;
+    margin-top: 10vh;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  li {
+    padding: 30px 0;
   }
   .fa-bars {
     font-size: 2rem;
@@ -98,13 +123,19 @@ $mobile-width: 480px;
 }
 
 .header-content {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 70%;
+  height: 100%;
 }
 
-// flex direction change
+.home, .blog, .contact  {
+  h1 {
+    padding-top: 25vh;
+  }
+}
+
 .section-info-outer,
 .gallery,
 .section-main-container,
@@ -116,22 +147,15 @@ $mobile-width: 480px;
   flex-wrap: wrap
 }
 
-.home {
-  h1 {
-    width: 70%;
-    @include fontSize(50);
-  }
-}
-
 // set padding to 0
 .section-info {
   padding: 0;
 }
 
 .section-info-outer {
-  padding: 20px 0;
-  padding-bottom: 180px;
+  top: 0;
     .section-info-content {
+      padding-top: 50px;
       text-align: center;
       margin: 0 auto;
       width: 100%;
@@ -218,7 +242,6 @@ $mobile-width: 480px;
 // Blog Media Query
 .blog {
   background-position: 30%;
-  height: 55vh;
 }
 .blog-page-container {
   height: 100%;
@@ -325,16 +348,8 @@ $mobile-width: 480px;
 
 }
 
- //tablet - 768px and below
+//tablet - 768px and below
 @include media-md {
-.home {
-  h1 {
-    padding: 40px 0;
-    width: 80%;
-    @include fontSize(42);   
-  }
-}
-
 .home-box-pic {
   top: -250px;
 }
@@ -383,13 +398,12 @@ textarea {
 // general typography changes 
 .home {
   background-position: 40%;
-  height: 70vh;
   .wrapper {
     height: 100%;
       h1 {
         padding: 20px 0;
         width: 90%;
-        @include fontSize(48);   
+        @include fontSize(60);   
       }
   }
 }
@@ -398,14 +412,10 @@ textarea {
   visibility: hidden;
 }
 
-  .logo {
-    @include fontSize(30);
-  }
-
 // section
 .section-info-outer {
   position: relative;
-  padding: 0 0 90px 0;
+  padding: 0;
       .section-info-image {
         margin-top: 100px;
         margin-bottom: 20px;
@@ -462,12 +472,6 @@ textarea {
 }
 
 // BLOG PAGE 
-.blog {
-  background-position: left;
-  background-size: cover;
-  height: 50vh;
-}
-
 .blog-page-container {
   padding-top: 30px;
 }
