@@ -10,8 +10,7 @@ console.log(dropdown);
 // Add an event listener
 selectButton.addEventListener("click", function () {
   if (dropdown.style.display === 'none') {
-    dropdown.style.display = '';
-    console.log("print console log");
+    dropdown.style.display = 'flex';
   } else {
     dropdown.style.display = 'none';
   }
