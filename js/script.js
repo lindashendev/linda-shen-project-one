@@ -1,13 +1,14 @@
-// pseudo code 
-// when user clicks on .fa-bars element (menu icon)
-// set .dropdown ul to visible
-// set to toggle - on/off 
+// Mobile dropdown functionality
+// 1. Grab menu icon class 
+// 2. When clicked, turn on display property
+// 3. If dropdown is visible, turn off display property 
 
-// Get menu icon from page
+// Get icon and ul element from the DOM 
 const selectButton = document.querySelector(".fa-bars");
 const dropdown = document.querySelector("ul");
 console.log(dropdown);
-// Add an event listener
+
+// Click event on menu icon
 selectButton.addEventListener("click", function () {
   if (dropdown.style.display === 'none') {
     dropdown.style.display = 'flex';
@@ -15,3 +16,4 @@ selectButton.addEventListener("click", function () {
     dropdown.style.display = 'none';
   }
 });
+
