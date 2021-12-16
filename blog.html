@@ -79,8 +79,8 @@
           <img src="./assets/comment-1.jpg" alt="">
         </div>  
         <div class="blog-comment">
-          <p>Tuesday December 9th, 2019 by Louise</p>
-          <p>
+          <p class="post-time">Tuesday December 9th, 2019 by Louise</p>
+          <p class="user-comment">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, dolor in adipisci, sequi totam accusantium praesentium perferendis cumque laboriosam, ullam expedita eos minima harum possimus libero quasi repellendus reprehenderit suscipit...
           </p>  
         </div>
@@ -90,25 +90,25 @@
           <img src="./assets/comment-2.jpg" alt="">
         </div>
       <div class="blog-comment">
-        <p>Wednesday December 10th, 2019 by JP</p>
-        <p>
+        <p class="post-time">Wednesday December 10th, 2019 by JP</p>
+        <p class="user-comment">
           Donec viverra eleifend lacus, consectetur adipisicing elit. Voluptatum, dolor in adipisci, sequi totam accusantium praesentium perferendis cumque laboriosam, ullam expedita eos minima harum possimus libero quasi repellendus reprehenderit suscipit...
         </p>
       </div>
       </div>
     </section>
     <!-- comment section starts -->
-    <section class="wrapper">
+    <section class="user-form wrapper">
     <form class="blog-comment-form" action="submit">
       <fieldset>
         <label for="user-name" class="sr-only">Name</label>
-        <input type="text" required="true" name="user-name" placeholder="Name">
+        <input type="text" required="true" name="user-name" id="user-name" placeholder="Name">
 
         <label for="user-email" class="sr-only">Email address</label>
-        <input type="email" required="true" name="user-email" placeholder="Email address">
+        <input type="email" required="true" name="user-email" id="user-email" placeholder="Email address">
 
         <label for="blog-comment" class="sr-only">Comment</label>
-        <textarea name="blog-comment" required="true" cols="35" rows="10" placeholder="Comment"></textarea>
+        <textarea name="blog-comment" id="blog-comment" required="true" cols="35" rows="10" placeholder="Comment"></textarea>
 
         <button type="submit">post comment</button>
       </fieldset>

@@ -299,6 +299,7 @@ nav {
   color: $primary;
   top: 160px;
   position: relative;
+  padding-bottom: 75px;  
     h4 {
       margin-bottom: 40px;
     }
@@ -315,6 +316,10 @@ nav {
   fieldset {
     width: 100%;
   }
+}
+
+.user-form {
+  padding-top: 75px;
 }
 
 // contact form
