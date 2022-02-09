@@ -7,24 +7,34 @@
     a {
       text-decoration: none;
       padding: 2px 35px;
+      position: relative;
+      transition: background-color 0.1s ease-in-out;
     }
 }
 
-// Light button
+// primary button hover
 .btn-primary-style {
   a {
-    background-color: $primary;
     color: $light-white;
+    background-color: $primary;
+  }
+  a:hover, a:focus {
+    color: $light-white;
+    background-color: $secondary; 
   }
 }
 
+// secondary button hover
 .btn-secondary-style {
   a {
-    background-color: $light-secondary;
     color: $primary;
+    background-color: $light-secondary;
+  }
+  a:hover, a:focus {
+    color: $light-white;
+    background-color: $primary; 
   }
 }
-
 
 // post - button styling
 button {
@@ -37,10 +47,18 @@ button {
   letter-spacing: 3px;
 }
 
-
+// contact form button
 .contact-section-container {
   button {
     color: $tertiary;
     background-color: $light-secondary;
+    transition: background-color 0.1s ease-out;
+  }
+  button:hover, button:focus {
+    color: $light-white;
+    background-color: $dark-primary;
   }
 }
+
+
+

@@ -87,7 +87,8 @@
 .blog-comments-section {
   color: $primary;
   top: -50px;
-  padding-top: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
   position: relative;
     h4 {
       margin-bottom: 40px;
@@ -100,6 +101,7 @@
 // Comments user profile
 .blog-user-comment {
   display: flex;
+  margin-bottom: 50px;
     .profile-image {
       width: 10%;
         img {
@@ -111,22 +113,28 @@
 // user comment text 
 .blog-comment {
   width: 70%;
-  margin-bottom: 50px;
-    p:first-child {
+    .post-time {
       font-weight: 700;
       margin-bottom: 10px;
     }
-    p {
+    .post-time, .user-comment {
       margin: 0;
       margin-left: 20px;
     }
 }
 
+.user-form {
+  padding-top: 0;
+}
 // button style
 .blog-comment-form {
     button {
       color: $light-white;
       background-color: $primary;
+      transition: background-color 0.1s ease-out;
+    }
+    button:hover, button:focus {
+      background-color: $secondary;
     }
 }
 
