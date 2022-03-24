@@ -26,7 +26,10 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 80vh;
+  height: 85vh;
+  h1 {
+    padding-top: 50px;
+  }
 }
 
 .home-box-pic {
