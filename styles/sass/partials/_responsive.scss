@@ -36,7 +36,6 @@ $mobile-width: 480px;
   }
 }
 
-// media query application 
 // desktop - 1024px and below
 @include media-xl {
   .article-card {
@@ -61,7 +60,6 @@ nav {
   left: 0;
   top: 0;
   width: 100%;
-  height: 10vh;
   position: fixed;
   background-color: $light-white;
   z-index: 10;
@@ -132,7 +130,8 @@ nav {
 
 .home, .blog, .contact  {
   h1 {
-    padding-top: 25vh;
+    padding-top: 20vh;
+    width: 80%;
   }
 }
 
