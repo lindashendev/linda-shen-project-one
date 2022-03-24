@@ -67,7 +67,6 @@ nav {
 
 .logo {
   position: relative;
-  left: 60px;
   align-self: flex-start;
 }
 
@@ -101,7 +100,7 @@ nav {
     color: $light-white;
     background-color: $secondary;
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 90px;
     left: 0;
     width: 100%;
     z-index: 10;
@@ -358,6 +357,16 @@ nav {
   top: -250px;
 }
 
+.home {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
 .section-main-info-block {
   h4 {
     margin-top: 10px;
@@ -406,8 +415,6 @@ textarea {
     height: 100%;
       h1 {
         padding: 20px 0;
-        width: 90%;
-        @include fontSize(60);   
       }
   }
 }
